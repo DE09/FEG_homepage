@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    {% include 'base/navbar_cn.html' %}
+
+<body>
+    <div class="doorimg">
+        <img src="/static/image/cn/subimg02.jpg" style="width : 100%; height : auto">
+    </div>
+
+
+    <div class="tabs">
+        <ul class="nav nav-tabs submenu justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{% url 'sea_cn' %}">海运进出口</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link  " aria-current="page" href="{% url 'air_cn' %}">航运进出口</a>
+            </li>
+
+        </ul>
+    </div>
+
+
+    <!-- 해상수출입     -->
+    <div class="tasktext">
+        <div style="margin-bottom: 50px;">
+            <p class="sub_title">海运进出口</p>
+            <hr style="border: solid 1px black;">
+            <h2>海运进出口</h2>
+            <br>
+            <p>
+                FEG作为International Freight Forwarder,负责国际运输、通关、内陆运输、包装、保管等客户的进出口物流业务。 我们在海上运输方面,不仅提供基本的日程安排，还可确认是否存在 Surrender，同时，还会跟进delay货品运达的持续Tracing ,并能在运输过程中确认货物是否损坏，做到迅速应答客人需求等。我们致力于提供以上领域的高品质服务。
+            </p>
+        </div>
+
+        <div class="img-wrap" style="text-align: center;">
+            <img src="/static/image/cn/sea_cn.jpg" class="be_img">
+
+        </div>
+
+        <div class="li_text" style="margin-top:50px;">
+            <li>1. 出口者请求报价并咨询日程后，委托FEG交付装运。FEG则确认进出口者之间的运输合同内容(INCOTERMS)，以及通关，运输的明确委托。</li>
+            <li>2. FEG委托相关海运公司进行时间表预约 (Booking and 
+                <a href="#" data-bs-toggle="tooltip" data-bs-title="Shipping Request: 装运要求，装货运输过程中需要满足的条件">Shipping Request</a>)
+            </li>
+            <li>3. FEG运输部门将发货人需出口货物从出口地装入，随后按照LCL 和
+                <a href="#" data-bs-toggle="tooltip"
+                    data-bs-title="CFS(Container Freight Station):集装箱货运站 就是集结和分散货物,办理集装箱的装箱与拆箱的场所. 所以CFS 就代表拼装/拼拆">
+                    CFS
+                </a>),
+                <a href="#" data-bs-toggle="tooltip"
+                    data-bs-title="FCL:整柜,指一整集装箱，有时也指Full Container Load Order，即整柜定单">
+                    FCL
+                </a>分别发往保税仓库(
+                <a href="#" data-bs-toggle="tooltip" data-bs-title="CY (container yard):集装箱堆场,一般在码头附近,是集装箱的中转站">
+                    CY</a>)
+
+            <li>4. 确认物品到达保税仓库或集装箱船后，测定货物的尺寸和重量，其中海运费用是以体积和重量中的较大值为标准来进行计算的。FCL的话，进出程序是全自动电脑操作的，而
+                <a href="#" data-bs-toggle="tooltip"
+                    data-bs-title="LCL(Less than Container Load):拼箱货. 货主托运零散或小数量的货物由承运人负责装箱的一种方式。承运人接到这种货物后，按性质和目的地进行分类，把同一目的地、性质相同的货物拼装进同一个集装箱进行运输。">
+                    LCL</a>的话，运进过程中司机的到达确认非常重要！
+            </li>
+
+            <li>5. FEG通关部门由出口者的装船文件（
+                <a href="#" data-bs-toggle="tooltip"
+                    data-bs-title="C/I(Commercial Invoice): 商业发票  出货之前要做的商业发票">
+                    C/I,</a>
+
+                <a href="#" data-bs-toggle="tooltip"
+                    data-bs-title="P/L(Packing List): 装箱单(P/L), 出货之前要做的装箱单">
+                    P/L</a>
+                )决定海关号码(
+
+                <a href="#" data-bs-toggle="tooltip"
+                    data-bs-title="HSCODE:即海关编码，为编码协调制度的简称，是对各种不同产品出入境应征/应退关税税率进行量化管理的制度">
+                    HSCODE</A>
+                ) 后，在海关出口报关-&gt;海关批准后发放出口许可证。 以上报关程序，海运公司均需在截单之前全部完成。
+            </li>
+            <li>6. 将从CFS和CY搬进来的货物，根据船只的靠岸日程，在进入终端后等待装运。船只在货物装载完后向目的港出航</li>
+            <li>7. 海运公司给FEG开具
+                <a href="#" data-bs-toggle="tooltip"
+                    data-bs-title="B/L(Bill of Lading):海运提单是由船长或承运人的代理人签发的证明海上运输合同和货物由承运人接管或装船，以及承运人据以保证交付货物的单据">
+                    B/L</a>
+                )
+                ，FEG给出口者开具B/L 。这里，海运公司开具的B/L跟货代公司开出来的Ho use B/L是类似的。B/L可以以original和
+                <a href="#" data-bs-toggle="tooltip"
+                    data-bs-title="Surrender : 电放，即说明该提单已经电放了，指定收货人凭提单传真件就可以提货">
+                    Surrender</a>
+                    两种方式领取。Original的话，由目的地FEG分公司负责接收并放行。
+                
+            </li>
+            <li>8. 启航日当天，海运公司给海外代理店发布出港通知和相关文件，FEG也同时向海外代理店发出启航通知和相关文件。</li>
+            <li>9. 海运公司海外代理店给FEG海外代理店发送到达通知，FEG海外代理店给收货人发送到达通知。与此同时，海运公司或代理公司还将一并寄送给收货者需承担费用的账单。
+                
+            </li>
+            <li>10. 收货人和货代公司支付相应的账单， 收货人的话给货代公司Original B/L 或者Surrendered Copy B/L， 货代公司的话给海运公司Original B/L后者Surrendered Copy B/L，申请提货单。
+            </li>
+            <li>11. 货物从船上卸货后，送到CY(FCL的话)和CFS(LCL的话)交货。（此时，仓库确认货物是否存在异常，并通知给收货方，也即代理公司。</li>
+            <li>12. 海运公司和货代公司确认货物的收纳后，DO 处理。</li>
+            <li>13. 海外代理店的报关行或者进口商的报关行利用 装船文件 (B/L、C/I、P/L)进行进口通关。根据与出口国的关系，关税减免优惠政策以及进口国的海关法律，决定海关号码，申报清关。海关批准（所需时间根据进口国家的通关环境会有所不同。）</li>
+            <li>14. 海关批准后，FEG海外代理店的拖车公司或者收货人的指定承运人在保税仓库装货，配送至收货地址。收货人在收货地点领取货物并签名。</li>
+            <li>15. FEG海外代理店在配送完成后发出通知（
+                <a href="#" data-bs-toggle="tooltip"
+                    data-bs-title="POD(Proof of Delivery):交付凭证.&nbsp;这是一种证书，证明货物没有任何异常地交给收货人。通常，它由SIGN发送到B&nbsp;/&nbsp;L或AWB并送到出口目的地。">
+                    POD</a>
+                    提供）  -&gt;  配送最终完成。
+            </li>
+
+            <li>*** 以上是通过FEG的出口程序。此外，上面的“FEG”表示“FEG的海外代理店”。</li>
+            <li>*** 以上程序是包括韩国在内的大部分高物流国家里城市的一般进出口步骤，部分国家的程序和环境可能会有所不同。</li>
+        </div>
+
+        <div class="space"></div>
+</div>
+        {% include 'base/footer_cn.html' %}
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include 'base_jp/head.html' %}
+
+
+<body>
+    <div class="doorimg">
+        <img src="/static/image/jp/maintask_jp.jpg" style="width : 100%; height : auto">
+    </div>
+
+
+    <div class="tabs">
+        <ul class="nav nav-tabs submenu justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="{% url 'sea_jp' %}">海上輸出入</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active " aria-current="page" href="{% url 'air_jp' %}">航空輸出入</a>
+            </li>
+        </ul>
+    </div>
+
+
+    <!-- 항공수출입 -->
+    <div class="tasktext">
+        <div style="margin-bottom: 50px;">
+            <p class="sub_title">航空輸出入</p>
+            <hr style="border: solid 1px black;">
+            <h2>FEGの航空運送業務</h2>
+            <p>
+                FEGはInternational Freight Forwarderとして国際運送、通関、内陸運送、包装、保管など顧客会社らの輸出入物流全般の責任を負っております。 航空運送においては基本的スケジュール案内はもちろん、迅速な配送が目的である航空運送の適時性を最大化するために、持続的Tracingおよび繁忙期、多様なルートのオプションを提示することで、顧客社の要求に応えるのに重点を置いております。
+            </p>
+        </div>
+
+        <div class="img-wrap" style="text-align: center;">
+            <img src="/static/image/jp/sub12img.jpg" class="be_img">
+            <img src="/static/image/jp/sub12img.jpg" class="af_img">
+        </div>
+
+    
+        <div class="li_text" style="margin-top:50px;">
+            <li>1. 輸出者が見積りの要請及びスケジュールの問い合わせ後FEGに船籍依頼。－FEGは輸出入者間の運送契約内容（インコトムジュ）確認及び通関/運送委託の可否確認</li>
+            <li>2. FEGが航空社に該当スケジュール予約（Booking and Shipping Request）</li>
+            <li>3. FEG運送チームで輸出者の出庫地で物品を積載してFEGの空港倉庫に搬入。</li>
+            <li>4. 倉庫で貨物サイズや重さ測定-運送費は重量と容積(かさ)の重さ換算値の中、大きい値(Chargeable Weight)に根拠して請求される。</li>
+            <li>5. FEG通関チームで輸出者の船積書類(
+                <a href="#" data-bs-toggle="tooltip"
+                    data-bs-title="CI(Commercial Invoice):商業送り状という販売者が売買契約の履行の事実を記載して購入者に発送している文書である">
+                    C/I,</a>
+                <a href="#" data-bs-toggle="tooltip"
+                    data-bs-title="PL(Packing List):梱包された物品の内容を説明する文書。 梱包明細書という船籍貨物の梱包や梱包の単位別明細と単位別Net Weight、gross weight、梱包の一連番号などを記載した文書という">
+                    P/L</a>
+                )をもとに細番符号(
+                <a href="#" data-bs-toggle="tooltip"
+                    data-bs-title="HSCODE:国際統一商品分類体系によって対外貿易取引商品を総括的に分類した品目分類コード">
+                    HSCODE</a>
+                ) 決定後、税関に輸出申告->承認後、税関で輸出申告証(略称の 免状)発給。これは、航空会社の書類取引期間の行わなければならないこと。
+            </li>
+            <li>6. FEG倉庫で、貨物を航空社の倉庫に移動及び出港待期</li>
+            <li>7. 出港当日、航空社はFEGに、FEGは輸出者に実測重量と面積の重さを記入した
+                <a href="#" data-bs-toggle="tooltip" data-bs-title="AWB : 航空送り状、航空運送のため貨物が受け取られることを証明する書類">
+                    AWB</a>
+                    の交付->この時、AWB上の
+                <a href="#" data-bs-toggle="tooltip"
+                    data-bs-title="Chargeable Weight:運賃計算の基準になる重量、通常貨物の実際の重量と容積重量の中重い方で計算される重さ">
+                    Chargeable weight </a>
+                    に根拠して運賃払い込み。
+            </li>
+            <li>8. 出港日に航空社は海外代理店に該当件の出港の通知や関連書類伝達。FEGも同時に海外代理店(あるいは支社)に出港の通知や書類配信。</li>
+            <li>9. 航空社の海外代理店は(航空社)FEG海外代理店(フォワード)に到着通知(A/N)をして、FEG海外代理店は輸入者(Consignee)に到着通知(A/N)をする。普通これと同時に航空社やフォワーダーは輸入者の付帯費用の負担額に対する請求書も一緒に送信。</li>
+            <li>10. 輸入者とFEGは該当請求書に対する金額を納付して各フォワーダー(輸入者の場合)と航空社(フォワーダーの場合)に貨物引き渡しの処理(
+                <a href="#" data-bs-toggle="tooltip" data-bs-title=" D/O(Delivery Order) : 船会社が本状持参人への貨物の引渡しを、ターミナル（ＣＹ/ＣＦＳ）オペレータに指示する書類。荷渡し指図書のこと。Ｄ/Ｏを提示することで、ＣＹ、ＣＦＳから貨物を受け取れる。">
+                    D/O</a>
+                )を要請。
+            </li>
+            <li>11. 貨物は機体からターミナルに降ろされた後、航空社から指定された保税倉庫に運送されて搬入された(この時、倉庫は貨物の異常有無を確認して荷受人であるフォワーダーに通知)</li>
+            <li>12. 航空社はフォワーダーに、フォワーダーは航空社に該当貨物の収納確認後、貨物引き渡し(D/O)処理。 (輸入地が韓国の場合、この処理過程は電算化されている)</li>
+            <li>13. FEG海外代理店の通関士あるいは輸入者の通関士は船積書類(B/L、CI、PL)で輸入通関進行。輸出国との関係によるFTA関税減免の特典と受入国の税関法令による事項を考慮して細番決定後の申告を進行。->税関の承認(輸入国家の通関環境によって所要時間が違う)</li>
+            <li>14. 税関の承認後、FEG海外代理店の運送社や輸入者の指定運送人は航空社の保税倉庫で貨物を積載して配送地に配送。お届け先から受取人署名などの受け取り確認書を確保。</li>
+            <li>15. FEGの海外代理店はFEG(船籍地)に配送完了通知(
+                <a href="#" data-bs-toggle="tooltip"
+                    data-bs-title="POD(Proof of Delivery):貨物を問題なく荷受人に納入できたという証書、B/LやAWBに荷受人のSIGNして受取確認資料として作成して輸出地に送る。">
+                    POD</a>
+                    提供)->配送最終完了
+            </li>
+            <li>*** 上記はFEGを通じた輸出手続きであり、輸入の場合、'FEGの海外代理店'を'FEG'に代入して適用。</li>
+            <li>*** 上記の手続きは韓国を含むほとんどの物流拠点都市の一般的な輸出入手続きに基づいており、一部国家の手順及び環境は異なる可能性がある。</li>
+        </div>
+    </div>
+
+    <div class="space"></div>
+
+    {% include 'base_jp/footer.html' %}
+</body>
+
+
+
+</html>

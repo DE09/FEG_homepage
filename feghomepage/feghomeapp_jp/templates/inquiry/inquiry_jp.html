@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include 'base_jp/head.html' %}
+
+<body>
+    <div class="doorimg">
+        <img src="/static/image/jp/board_jp.jpg" style="width : auto; height : 250px" class="d-block w-100">
+    </div>
+
+
+
+
+    <div class="tasktext">
+        <div>
+            <p class="sub_title">お見積り問い合わせ</p>
+            <hr style="border: solid 1px black;">
+        </div>
+    </div>
+
+    {% if messages %}
+    <div class="messages">{{messages}}</div>
+    {% else%}
+
+    <div class="container">
+        <form action="{% url 'inquiry' %}" method="post">
+            {% csrf_token %}
+
+            <input type="text" class="form-control" name="language" placeholder="language" value="Janpanese" hidden>
+            <!-- <input type="hidden" name="csrfmiddlewaretoken"
+                value="gS6NukkxWl6J2Z8rdgJ0TjjXLDz3C0EdFSIzdVqplxWGntJzrSUqgM33l0S55ZNU"> -->
+            <div class="input-field">
+                <input type="text" class="form-control" name="company" placeholder="Company" required="">
+            </div>
+            <div class="input-field">
+                <input type="text" class="form-control" name="name" placeholder="Name" required="">
+            </div>
+            <div class="input-field">
+                <input type="tel" class="form-control" name="phone" placeholder="Mobile" required="">
+            </div>
+            <div class="input-field">
+                <input type="email" class="form-control" name="email" placeholder="E-mail" required="">
+            </div>
+            <div class="input-field container" style="text-align: center;">
+                <div class="row">
+                    <div class="col-5 col-sm-4">
+                        <select name="imex" id="imex" class="form-select form-select-sm">
+                            <option value="none">Imp/Exp</option>
+                            <option value="Import">Import</option>
+                            <option value="Export">Export</option>
+                        </select>
+                    </div>
+                    <div class="col-5 col-sm-4">
+                        <select name="incoterms" id="incoterms" class="form-select form-select-sm">
+                            <option value="none">Incoterms</option>
+                            <option value="EXW">EXW</option>
+                            <option value="FCA">FCA</option>
+                            <option value="FAS">FAS</option>
+                            <option value="FOB">FOB</option>
+                            <option value="CFR">CFR</option>
+                            <option value="CIF">CIF</option>
+                            <option value="CPT">CPT</option>
+                            <option value="CIP">CIP</option>
+                            <option value="DAP">DAP</option>
+                            <option value="DPU">DPU</option>
+                            <option value="DDP">DDP</option>
+                        </select>
+                    </div>
+                    <div class="col-5 col-sm-4">
+                        <select name="shippingmode" id="shippingmode" class="form-select form-select-sm">
+                            <option value="none">TYPE</option>
+                            <option value="LCL">LCL</option>
+                            <option value="FCL">FCL</option>
+                            <option value="AIR">AIR</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="input-field message">
+                <textarea name="message" class="form-control" placeholder="Inquiry" required=""></textarea>
+            </div>
+
+
+
+            <div class="s4_form s4_form3">
+                <h5><span class="red"></span>Privacy Statement</h5><br>
+                <ul class="s4_form_ul">
+                    <li class="privacy_terms"
+                        style="height: 250px; overflow-y: scroll; background: #fafafa; border: 1px solid #f1f0f0; border-top: 0px; line-height: 130%;">
+                        <div class="privacy_div privacy01">
+                            <div id="content_desc"
+                                style="width: 100%; height: 100%; padding: 15px; border: 1px solid #f8f7f7; border-top: 0px;">
+                                <div class="cont_box">
+                                    <p class="p03">
+                                        Personal information Policy of FAMILY EXPRESS
+                                        <br>
+                                        FAMILY EXPRESS co. ltd. considers your personal information important and comply
+                                        with the Act on Promotion of Information Communication Network Utilization, and
+                                        the Privacy Act.
+                                        Through the Privacy Policy, the company will inform you about the purpose and
+                                        methods for which the personal information provided is used and what actions are
+                                        taken to protect the privacy.<br>
+                                        Any amendments on the policy will be advised on the website notice (or
+                                        individual notice). <br>
+                                        - This policy is effective December 1, 2017.
+                                        <br><br>
+                                    </p>
+                                </div>
+                                <br>
+                                <div class="cont_box">
+                                    <p class="p02">1. Personal information that are collected </p>
+                                    <p class="p03">
+                                        Following personal information are collected for online quotation inquiry and
+                                        visit application.<br><br>
+                                        Information Collected : Details needed for online quotation inquiry such as
+                                        company name, name of applicant, phone number, e-mail and contents of
+                                        inquiry.<br><br>
+                                        Personal Information Collection Method: Website (Online quotation inquiry)<br>
+                                    </p>
+                                </div>
+                                <br><br>
+                                <div class="cont_box">
+                                    <p class="p02">2. Purpose of personal information collection and usage</p>
+                                    <p class="p03">The company offers free access to most of its contents without a
+                                        separate membership registration process.
+                                        <br>
+                                        The company uses the personal information collected according to the online
+                                        quotation inquiry for the following purposes.
+                                        <br><br>
+                                    </p>
+                                    <br>
+                                    <p class="p03">3. Retention and usage period of personal information</p>
+                                    <p class="p03">The personal information is deleted without delay after the purpose
+                                        of collection and usage have been achieved.<br><br>
+                                    </p>
+                                </div>
+                                <br>
+                                <div class="cont_box">
+                                    <p class="p02">4. Procedure and method for shredding personal information</p>
+                                    <p class="p03">The company shall discard the personal information without delay if
+                                        the purpose of collection or the purpose provided is achieved. The disposal
+                                        procedure and procedure are as follows.<br>
+                                        <br><br>
+                                    </p>
+
+                                    <p class="p03">5. The process of disposal <br><br>
+                                        The information you entered for the use of online quotation inquiry is
+                                        transferred to a separate database after the purpose has been achieved (separate
+                                        document box in case of paper) and the information protection period (refer to
+                                        the period of data storage and usage). <br>
+                                        Personal information transferred to a separate DB cannot be used for any other
+                                        purpose except it complies the law. <br><br>
+                                    </p>
+                                    <p class="p03">6. Method of disposal
+                                        When the purpose of the collection or the purpose for the delivery is achieved
+                                        Personal information printed on paper: shredded or incinerated
+                                        Personal information stored in the form of electronic files: deleted by
+                                        technical method that do not leave history
+                                    </p>
+                                </div>
+                                <br>
+                                <div class="cont_box">
+                                    <p class="p02">7. Sharing and providing personal information to 3rd party.</p>
+                                    <p class="p03">
+                                        The company shall not share nor provide personal information collected to the
+                                        third party.
+                                    </p>
+                                </div>
+                                <br>
+                                <div class="cont_box">
+                                    <p class="p02">8. Consignment of Personal Information Processing</p>
+                                    <p class="p03">
+                                        The company does not contract to any other parties in handling personal
+                                        information. <br>
+                                        If such a need arises in the future, we will inform you of the consignees and
+                                        the details of consigned party, and will seek prior consent if necessary.<br>
+                                    </p>
+                                </div>
+                                <br>
+                                <div class="cont_box">
+                                    <p class="p02">9. Installation, operation, and refusal of automatic personal
+                                        information collection devices </p>
+                                    <p class="p03">The company is striving to protect the client's personal information
+                                        and handle complaints related to personal information. <br>
+                                        If you have any questions about your personal information, please contact us as
+                                        below We will respond to your inquiries promptly and faithfully.
+                                        <br>
+                                    </p>
+                                </div>
+                                <br>
+                                <div class="cont_box">
+                                    <p class="p02">10. Personal Information Management Department : Management
+                                        Department</p>
+                                    <p class="p03">
+                                        TEL: 02.783.6181<br>
+                                        E-mail: admin@familyexp.com<br>
+                                    </p>
+                                    <br><br>
+                                    <p class="p03">
+                                        11. Consulting and reporting on personal information breaches<br><br>
+                                        If you need to report or consulting with the organization for other violation of
+                                        personal information, contact the following organization.<br>
+                                        Personal Information Conflict Ration Coordination Committee (http://kopico.or.kr
+                                        - 404-5150)<br>
+                                        Information Protection Markings Certification Commission
+                                        (http://www.eprivacy.or.kr / 02-580-0533 - 4)<br>
+                                        National Police Agency Cyber Security Agency (http://cyberbureau.police.go.kr /
+                                        182)<br>
+                                        The Internet Crime Investigation Center of the Supreme Public Prosecutors '
+                                        Office (http://www.spo.go.kr/minwon/center/report/minwon24.jsp / 02-3480-3600)
+                                        <br>
+                                        National Police Agency Cyber Terror Response Center (02-392-0330)<br>
+                                    </p>
+                                </div>
+                                <br>
+                                <div class="cont_box">
+                                    <p class="p02">12.Responsibility of notifying amendments in the policy</p>
+                                    <p class="p03">This Privacy Policy was revised on August 22, 2016. The company will
+                                        announce any amendments at least seven days before making any changes, including
+                                        adding, deleting or modifying the contents, that are in compliance with the
+                                        changes in policies or security technologies.
+                                        <br>
+                                        - Privacy Policy Version Number : v1.1<br>
+                                        - Personal information handling policy implementation date : 2017.12. 01<br>
+                                        - Personal information handling policy change date : 2017.12. 01<br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--privacy01-->
+                    </li><br>
+
+                </ul>
+            </div>
+            <div>
+                <input type="checkbox" name="my_checkbox" id="my_checkbox" onclick="toggleTextbox(this)">
+                <label for="my_checkbox">I agree</label>
+                <button type="submit" class="btn btn-primary pull-right" value="SEND MESSAGE" id="msg-submit"
+                    disabled="">SEND E-MAIL</button>
+            </div>
+            <div class="input-field">
+            </div>
+
+
+        </form>
+    </div>
+    <div class="bt_mg"></div>
+
+    {% endif %}
+    {% include 'base_jp/footer.html' %}
+
+    <script>
+        function toggleTextbox(checkbox) {
+            const textbox_elem = document.getElementById('msg-submit');
+            textbox_elem.disabled = checkbox.checked ? false : true;
+        }
+
+    </script>
+</body>
+
+</html>

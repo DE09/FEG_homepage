@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    {% include 'base/navbar_eng.html' %}
+
+<body>
+    <div>
+        <img src="/static/image/intro/intro_back_eng.jpg" style="width : 100%; height : auto">
+    </div>
+
+    <div class="tabs">
+        <ul class="nav nav-tabs submenu justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="{% url 'intro_eng' %}">Greeting</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active " aria-current="page" href="{% url 'history_eng' %}">History</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="{% url 'ogchart_eng' %}">ORG Chart</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="{% url 'sponsorship_eng' %}">CSR</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="{% url 'access_eng' %}">Contact us</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 연혁 -->
+    <div class="tasktext">
+        <div>
+            <p class="sub_title">History</p>
+            <hr style="border: solid 1px black;">
+        </div>
+        <div style="text-align: center;">
+            <img src="/static/image/intro/history_eng.jpg" class="be_img">
+            <img src="/static/image/intro/history_eng_small.jpg" class="af_img">
+        </div>
+
+
+    </div>
+        <div class="bt_mg"></div>
+        {% include 'base/footer_eng.html' %}
+</body>
+
+</html>

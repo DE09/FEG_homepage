@@ -1,0 +1,67 @@
+<nav class="navbar navbar-expand-sm navbar-light" id="neubar">
+  <div class="container">
+    <a class="navbar-brand" href="{% url 'home_jp' %}"><img src="/static/image/banner/feglogo.png" class="toplogo"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto ">
+
+        <div class="other_lang">
+          <ul style="list-style:none; justify-content: space-evenly;">
+            <li><a href="{% url 'home' %}">한글</a></li>
+            <li>|</li>
+            <li><a href="{% url 'home_cn' %}">中文</a></li>
+            <li>|</li>
+            <li><a href="{% url 'home_eng' %}">EN</a></li>
+            <li>|</li>
+            <li><a href="{% url 'home_jp' %}">日本語</a></li>
+          </ul>
+        </div>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link mx-2" aria-current="page" href="{% url 'intro_jp' %}" id="homelink" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <p class="title">会社紹介</p>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="homelink">
+            <li><a class="dropdown-item" href="{% url 'intro_jp' %}">ご挨拶</a></li>
+            <li><a class="dropdown-item" href="{% url 'history_jp' %}">沿革</a></li>
+            <li><a class="dropdown-item" href="{% url 'ogchart_jp' %}">組織</a></li>
+            <li><a class="dropdown-item" href="{% url 'sponsorship_jp' %}">後援活動</a></li>
+            <li><a class="dropdown-item" href="{% url 'access_jp' %}">地図</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown ">
+          <a class="nav-link mx-2" aria-current="page" href="{% url 'sea_jp' %}" id="worklink" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <p class="title">主要業務</p>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="worklink">
+            <li><a class="dropdown-item" href="{% url 'sea_jp' %}">海上輸出入</a></li>
+            <li><a class="dropdown-item" href="{% url 'air_jp' %}">航空輸出入</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown ">
+          <a class="nav-link mx-2 " aria-current="page" href="{% url 'corevalue_jp' %}" id="fegsquare" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <p class="title">FEGの強み</p>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="fegsquare">
+            <!-- 전문적 서비스 -->
+            <li><a class="dropdown-item" href="{% url 'corevalue_jp' %}">専門的サービス</a></li>
+            <!-- 합리적 비용 -->
+            <li><a class="dropdown-item" href="{% url 'rational_price_jp' %}">合理的費用</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown ">
+          <a class="nav-link mx-2" href="{% url 'inquiry_jp' %}">
+            <p class="title">掲示板</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

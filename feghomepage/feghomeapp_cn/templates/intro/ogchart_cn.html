@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    {% include 'base/navbar_cn.html' %}
+
+<body>
+    <div class="doorimg">
+        <img src="/static/image/cn/subimg01.jpg" style="width : 100%; height : auto">
+    </div>
+
+
+    <div class="tabs">
+    <ul class="nav nav-tabs submenu justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="{% url 'intro_cn' %}">问候语</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link  " aria-current="page" href="{% url 'history_cn' %}">发展历程</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{% url 'ogchart_cn' %}">组织结构图</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="{% url 'sponsorship_cn' %}">赞助活动</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="{% url 'access_cn' %}">路线</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 조직도 -->
+
+    <div class="img-wrap">
+        <div>
+            <p class="sub_title">组织结构图</p>
+            <hr style="border: solid 1px black;">
+        </div>
+        <div style="text-align: center;">
+            <img src="/static/image/cn/or_chart_cn.jpg" class="be_img">
+<img src="/static/image/cn/or_chart_small_cn.jpg" class="af_img">
+    </div>
+
+
+    <div class="bt_mg"></div>
+    {% include 'base/footer_cn.html' %}
+</body>
+
+</html>
