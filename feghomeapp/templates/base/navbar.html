@@ -1,0 +1,102 @@
+{% load static %}
+<head>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+  <title>Family Express</title>
+  <link rel="icon" type="image/png" href="/static/image/jp/logo.svg" />
+
+
+  <div class="fe_topbanner">
+    <div class="tb_div">
+      <img src="/static/image/banner/topbanner01.png">
+    </div>
+    <div class="tb_div" style="margin-top:25px"><a href="{% url 'inquiry' %}">
+        <img src="/static/image/banner/topbanner02.png"></a></div>
+  </div>
+
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="/static/main.css">
+
+
+</head>
+
+
+<nav class="navbar navbar-expand-sm navbar-light" id="neubar">
+  <div class="container">
+    <a class="navbar-brand" href="/"><img src="/static/image/banner/feglogo.png" class="toplogo"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto" id="headtitle" style="padding:1%">
+
+        <div class="other_lang">
+          <ul style="list-style:none; justify-content: space-evenly;">
+            <li><a href="{% url 'home' %}">한글</a></li>
+            <li>|</li>
+            <li><a href="{% url 'home_cn' %}">中文</a></li>
+            <li>|</li>
+            <li><a href="{% url 'home_eng' %}">EN</a></li>
+            <li>|</li>
+            <li><a href="{% url 'home_jp' %}">日本語</a></li>
+          </ul>
+        </div>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link mx-2" aria-current="page" href="{% url 'intro' %}" id="homelink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <p class="title">회사소개</p>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="homelink">
+              <li><a class="dropdown-item" href="{% url 'intro' %}">인사말</a></li>
+              <li><a class="dropdown-item" href="{% url 'history' %}">연혁</a></li>
+              <li><a class="dropdown-item" href="{% url 'ogchart' %}">조직도</a></li>
+              <li><a class="dropdown-item" href="{% url 'sponsorship' %}">후원활동</a></li>
+              <li><a class="dropdown-item" href="{% url 'access' %}">오시는 길</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link mx-2" aria-current="page" href="{% url 'sea' %}" id="worklink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <p class="title">주요업무</p>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="worklink">
+              <li><a class="dropdown-item" href="{% url 'sea' %}">해상수출입</a></li>
+              <li><a class="dropdown-item" href="{% url 'air' %}">항공수출입</a></li>
+              <li><a class="dropdown-item" href="{% url 'customs' %}">수출입통관</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown ">
+            <a class="nav-link mx-2 " aria-current="page" href="{% url 'fegsquare' %}" id="fegsquare" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <p class="title">FEG스퀘어</p>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="fegsquare">
+              <li><a class="dropdown-item" href="{% url 'fegsquare' %}">FEG SQUARE</a></li>
+              <li><a class="dropdown-item" href="{% url 'inquiry' %}">견적문의</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown ">
+            <a class="nav-link mx-2" href="{% url 'simfullo' %}">
+              <p class="title">심풀로</p>
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link mx-2" href="{% url 'travel' %}">
+              <p class="title">여행사업부</p>
+            </a>
+          </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>

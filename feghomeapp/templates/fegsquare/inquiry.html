@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include 'base/navbar.html' %}
+
+<body>
+    <div class="doorimg">
+        <img src="/static/image/fegsquare/fegsquare_head.jpg" style="width : 100%; height : auto">
+    </div>
+
+    <div class="tabs">
+        <ul class="nav nav-tabs submenu justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="{% url 'fegsquare' %}">FEG SQUARE</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{% url 'inquiry' %}">견적문의</a>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="tasktext">
+        <div>
+            <p class="sub_title">Contact us</p>
+            <hr style="border: solid 1px black;">
+
+        </div>
+    </div>
+
+    {% if messages %}
+        <div class="messages">{{messages}}</div>
+    {% else%}
+
+    <div class="container">
+        <form action="" method="post" id="inquiry">
+            {% csrf_token %}
+            <input type="text" class="form-control" name="language" placeholder="language" value="Korean" hidden>
+
+            <div class="input-field">
+                <input type="text" class="form-control" name="company" placeholder="회사명" required="">
+            </div>
+            <div class="input-field">
+                <input type="text" class="form-control" name="name" placeholder="이름" required="">
+            </div>
+            <div class="input-field">
+                <input type="tel" class="form-control" name="phone" placeholder="전화번호" required="">
+            </div>
+            <div class="input-field">
+                <input type="email" class="form-control" name="email" placeholder="이메일주소" required="">
+            </div>
+            <div class="input-field hstack" style="text-align: center;">
+                <select name="imex" id="imex" class="form-select">
+                    <option value="none">수입/수출</option>
+                    <option value="수입">수입</option>
+                    <option value="수출">수출</option>
+                </select>
+                <select name="incoterms" id="incoterms" class="form-select">
+                    <option value="none">Incoterms</option>
+                    <option value="EXW">EXW</option>
+                    <option value="FCA">FCA</option>
+                    <option value="FAS">FAS</option>
+                    <option value="FOB">FOB</option>
+                    <option value="CFR">CFR</option>
+                    <option value="CIF">CIF</option>
+                    <option value="CPT">CPT</option>
+                    <option value="CIP">CIP</option>
+                    <option value="DAP">DAP</option>
+                    <option value="DPU">DPU</option>
+                    <option value="DDP">DDP</option>
+
+                </select>
+                <select name="shippingmode" id="shippingmode" class="form-select">
+                    <option value="none">운송방법</option>
+                    <option value="LCL">LCL</option>
+                    <option value="FCL">FCL</option>
+                    <option value="AIR">AIR</option>
+                </select>
+            </div>
+            <div class="input-field message">
+                <textarea name="message" class="form-control" placeholder="내용" required=""></textarea>
+            </div>
+
+
+
+            <div class="s4_form s4_form3">
+                <h5><span class="red"></span>주식회사 훼밀리익스프레스 개인정보취급방침</h5><br>
+                <ul class="s4_form_ul">
+                    <li class="privacy_terms"
+                        style="height: 250px; overflow-y: scroll; background: #fafafa; border: 1px solid #f1f0f0; border-top: 0px; line-height: 130%;">
+                        <div class="privacy_div privacy01">
+                            <div id="content_desc"
+                                style="width: 100%; height: 100%; padding: 15px; border: 1px solid #f8f7f7; border-top: 0px;">
+                                <div class="cont_box">
+                                    <p class="p03">
+                                        주식회사 훼밀리익스프레스 는 (이하 '회사')는 고객님의 개인정보를 중요시하며, 『정보통신망 이용촉진 등에 관한 법률』 및 『개인정보보호법률』
+                                        등 관련 법률과 규정을 준수하고 있습니다.
+                                        회사는 개인정보취급방침을 통하여 고객님께서 제공하시는 개인정보가 어떠한 용도와 방식으로 이용되고 있으며, 개인정보보호를 위해 어떠한 조치가
+                                        취해지고 있는지 알려드립니다.
+                                        회사는 개인정보취급방침을 개정하는 경우 웹사이트 공지사항(또는 개별공지)을 통하여 공지할 것입니다.
+                                        <br>
+                                        - 본 방침은 2017년 12월 01일부터 시행됩니다.
+                                        <br><br>
+                                    </p>
+                                </div>
+                                <br>
+                                <div class="cont_box">
+                                    <p class="p02">1. 수집하는 개인정보 항목</p>
+                                    <p class="p03">
+                                        회사는 온라인 견적문의, 방문신청 등을 위해 아래와 같은 개인정보를 수집하고 있습니다.<br><br>
+                                        1) 회사명<br>
+                                        2) 이름<br>
+                                        3) 전화번호<br>
+                                        4) 이메일<br>
+                                        5) 문의내용 등 온라인 견적 문의 시 필요한 항목<br><br>
+                                        개인정보 수집방법: 홈페이지(온라인 견적문의)<br>
+                                    </p>
+                                </div>
+                                <br><br>
+                                <div class="cont_box">
+                                    <p class="p02">2. 개인정보의 수집 및 이용목적</p>
+                                    <p class="p03">회사는 별도의 회원가입 절차 없이 대부분의 컨텐츠에 자유롭게 접근할 수 있습니다.
+                                        <br>
+                                        회사는 온라인 견적문의 이용에 따라 수집한 개인정보를 다음의 목적을 위해 활용합니다.
+                                        <br><br>
+                                        '문의에 대한 답변을 회신할 때'
+                                    </p>
+                                    <br>
+                                    <p class="p03">3. 개인정보의 보유 및 이용기간</p>
+                                    <p class="p03">회사는 개인정보의 수집 및 이용목적이 달성된 후에는 해당 정보를 지체없이 파기합니다.<br><br>
+                                    </p>
+                                </div>
+                                <br>
+                                <div class="cont_box">
+                                    <p class="p02">4. 개인정보의 파기절차 및 방법</p>
+                                    <p class="p03">회사는 수집목적 또는 제공받은 목적이 달성된 경우 해당 개인정보는 지체없이 파기합니다. 파기절차 및 방법은 다음과
+                                        같습니다.<br>
+                                        <br><br>
+                                    </p>
+
+                                    <p class="p03">5. 파기절차 <br><br>
+                                        회원님이 온라인견적문의 이용을 위해 입력하신 정보는 목적이 달성된 후 별도의 DB로 옮겨져(종이의 경우 별도의 서류함) 내부 방침 및 기타 관련
+                                        법령에 의한 정보보호 사유에 따라(보유 및 이용기간 참조) 일정기간 저장된 후 파기됩니다. <br>
+                                        별도 DB로 옮겨진 개인정보는 법률에 의한 경우가 아니고서는 보유되는 이외의 다른 목적으로 이용되지 않습니다. <br><br>
+                                    </p>
+                                    <p class="p03">6. 파기방법
+                                        수집 목적 또는 제공받는 목적이 달성된 경우
+                                        종이에 출력 된 개인정보: 분쇄기로 분쇄하거나 소각
+                                        전자적 파일의 형태로 저장 된 개인정보: 기록을 재생할 수 없는 기술적 방법을 사용하여 삭제
+                                    </p>
+                                </div>
+                                <br>
+                                <div class="cont_box">
+                                    <p class="p02">7. 개인정보 제 3자 공유 및 제공</p>
+                                    <p class="p03">
+                                        회사는 수집한 개인정보를 제 3자와 공유 및 제공하지 않습니다.
+                                    </p>
+                                </div>
+                                <br>
+                                <div class="cont_box">
+                                    <p class="p02">8. 개인정보 처리의 위탁</p>
+                                    <p class="p03">
+                                        회사는 개인정보 처리와 관련하여 업무 위탁을 하지 않습니다. <br>
+                                        향후 그러한 필요가 생길 경우, 위탁 대상자와 위탁 업무 내용에 대해 고객님에게 통지하고 필요한 경우 사전 동의를 받도록 하겠습니다.<br>
+                                    </p>
+                                </div>
+                                <br>
+                                <div class="cont_box">
+                                    <p class="p02">9. 개인정보 자동수집 장치의 설치, 운영 및 그 거부에 관한 사항 </p>
+                                    <p class="p03">회사는 고객의 개인정보를 보호하고 개인정보와 관련한 불만을 처리하기 위하여 노력하고 있습니다. <br>
+                                        개인정보와 관련한 문의사항이 있으시면 아래 연락처로 연락 주시기 바랍니다.<br>
+                                        고객님의 문의사항에 신속하고 성실하게 답변해드리겠습니다.
+                                    </p>
+                                </div>
+                                <br>
+                                <div class="cont_box">
+                                    <p class="p02">10. 개인정보관리책임부서: 관리부</p>
+                                    <p class="p03">
+                                        전화번호: 02.783.6181<br>
+                                        E-mail: admin@familyexp.com<br>
+                                    </p>
+                                    <br><br>
+                                    <p class="p03">
+                                        11.개인정보침해 관련 상담 및 신고<br><br>
+                                        기타 개인정보침해에 대한 신고나 상담이 필요하신 경우에는 아래 기관에 문의하시기 바랍니다.<br>
+                                        개인정보분쟁조정위원회 ( http://kopico.or.kr / 02-405-5150)<br>
+                                        정보보호마크인증위원회 (http://www.eprivacy.or.kr / 02-580-0533~4)<br>
+                                        경찰청 사이버안전국 (http://cyberbureau.police.go.kr / 182)<br>
+                                        대검찰청 인터넷범죄수사센터(http://www.spo.go.kr/minwon/center/report/minwon24.jsp /
+                                        02-3480-3600) <br>
+                                        경찰청 사이버테러대응센터 (http://www.ctrc.go.kr / 02-392-0330)<br>
+                                    </p>
+                                </div>
+                                <br>
+                                <div class="cont_box">
+                                    <p class="p02">12.정책변경에 따른 고지 의무</p>
+                                    <p class="p03">이 개인정보보호방침은 2016년 8월 22일 개정되었으며 법령, 정책 또는 보안기술의 변경에 따라
+                                        내용의 추가, 삭제 및 수정이 있을 시에는 변경되는 개인정보보호정책을 시행하기 최소 7일 전에 주식회사 훼밀리익스프레스 웹사이트를 통해
+                                        변경 이유 및 내용 등을 고지하도록 하겠습니다.
+                                        <br>
+                                        - 개인정보취급방침 버전번호: v1.1<br>
+                                        - 개인정보취급방침 시행일자: 2017. 12. 01<br>
+                                        - 개인정보취급방침 변경일자: 2017. 12. 01<br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--privacy01-->
+                    </li><br>
+
+                </ul>
+            </div>
+            <div>
+                <input type="checkbox" name="my_checkbox" id="my_checkbox" onclick="toggleTextbox(this)">
+                <label for="my_checkbox">개인정보 수집에 동의합니다.</label>
+                <button type="submit" class="btn btn-primary pull-right" value="SEND MESSAGE" id="msg-submit"
+                    disabled="">SEND E-MAIL</button>
+            </div>
+            <div class="input-field">
+            </div>
+
+
+        </form>
+    </div>
+    <div class="bt_mg"></div>
+    {% endif %}
+
+
+    {% include 'base/footer.html' %}
+
+
+    <script>
+        $.ajax({
+            data: {
+                name: name,
+                message: message,
+                email: email
+            },
+            url: 'Your app url',
+            method: 'post',
+            success: (data) => {
+                console.log(data)
+                // parsing = JSON.parse(data.data);
+            },
+            error: (xhr, err) => {
+                console.log(err);
+            }
+        });
+    </script>
+
+    <script>
+        function toggleTextbox(checkbox) {
+            // 1. 텍스트 박스 element 찾기
+            var checkedbox = document.getElementById('msg-submit');
+            // 2-1. 체크박스 선택여부 체크
+            // 2-2. 체크박스 선택여부에 따라 텍스트박스 활성화/비활성화
+            checkedbox.disabled = checkbox.checked ? false : true;
+
+            // 3. 텍스트박스 활성화/비활성화 여부에 따라
+
+            // - 텍스트박스가 비활성화 된 경우 : 텍스트박스 초기화
+
+            // - 텍스트박스가 활성화 된 경우 : 포커스 이동
+            if (checkedbox.disabled) {
+                checkedbox.value = null;
+
+            } else {
+                checkedbox.focus();
+
+            }
+        }
+    </script>
+
+    <!-- <script>
+    $("#msg-submit").on("click", function (){
+        $("#inquiry").css("display", "none")
+    }) 
+</script> -->
+
+
+</body>
+
+</html>

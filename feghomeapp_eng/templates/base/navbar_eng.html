@@ -1,0 +1,101 @@
+{% load static %}
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
+    <title>Family Express</title>
+    <link rel="icon" type="image/png" href="/static/image/jp/logo.svg" />
+  
+
+  <div class="fe_topbanner">
+    <div class="tb_div">
+      <img src="/static/image/banner/topbanner01_eng.png"></div>
+    <div class="tb_div" style="margin-top:25px"><a href="{% url 'inquiry_eng' %}">
+      <img src="/static/image/banner/topbanner02_eng.png"></a></div>
+  </div>
+
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="/static/main.css">
+
+
+</head>
+
+
+<nav class="navbar navbar-expand-sm navbar-light" id="neubar">
+  <div class="container">
+    <a class="navbar-brand" href="{% url 'home_eng' %}"><img src="/static/image/banner/feglogo.png" class="toplogo"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto ">
+
+          <div class="other_lang">
+            <ul style="list-style:none; justify-content: space-evenly;">
+              <li><a href="{% url 'home' %}">KR</a></li>
+              <li>|</li>
+              <li><a href="{% url 'home_cn' %}">CN</a></li>
+              <li>|</li>
+              <li><a href="{% url 'home_eng' %}">EN</a></li>
+              <li>|</li>
+              <li><a href="{% url 'home_jp' %}">JP</a></li>
+            </ul>
+          </div>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link mx-2" aria-current="page" href="{% url 'intro_eng' %}" id="homelink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <p class="title">ABOUT</p>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="homelink">
+              <li><a class="dropdown-item" href="{% url 'intro_eng' %}">Greeting</a></li>
+              <li><a class="dropdown-item" href="{% url 'history_eng' %}">History</a></li>
+              <li><a class="dropdown-item" href="{% url 'ogchart_eng' %}">ORG Chart</a></li>
+              <li><a class="dropdown-item" href="{% url 'sponsorship_eng' %}">CSR(Corporate Social Responsibility)</a></li>
+              <li><a class="dropdown-item" href="{% url 'access_eng' %}">Contact us</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown ">
+            <a class="nav-link mx-2" aria-current="page" href="{% url 'sea_eng' %}" id="worklink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <p class="title">CORE OPERATION</p>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="worklink">
+              <li><a class="dropdown-item" href="{% url 'sea_eng' %}">Ocean In & Out</a></li>
+              <li><a class="dropdown-item" href="{% url 'air_eng' %}">Air In & Out</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown ">
+            <a class="nav-link mx-2 " aria-current="page" href="{% url 'corevalue_eng' %}" id="corevalue" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <p class="title">CORE VALUE OF F.E.G</p>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="corevalue">
+              <li><a class="dropdown-item" href="{% url 'corevalue_eng' %}">PROFESSIONAL CUSTOMER CARE</a></li>
+              <li><a class="dropdown-item" href="{% url 'rational_price_eng' %}">REASONABLE PRICE</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link mx-2" href="{% url 'travel_eng' %}">
+              <p class="title">CORPORATE TRAVEL MANAGEMENT</p>
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link mx-2" href="{% url 'inquiry_eng' %}">
+              <p class="title">BOARD</p>
+            </a>
+          </li>
+      </ul>
+    </div>
+  </div>
+</nav>

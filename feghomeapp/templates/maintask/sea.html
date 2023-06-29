@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    {% include 'base/navbar.html' %}
+
+<body>
+    <div class="doorimg">
+        <img src="/static/image/maintask/business area.jpg" style="width : 100%; height : auto">
+    </div>
+
+
+    <div class="tabs">
+        <ul class="nav nav-tabs submenu justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{% url 'sea' %}">해상수출입</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link  " aria-current="page" href="{% url 'air' %}">항공수출입</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="{% url 'customs' %}">수출입통관</a>
+            </li>
+        </ul>
+    </div>
+
+
+    <!-- 해상수출입     -->
+    <div class="tasktext">
+        <div style="margin-bottom: 50px;">
+            <p class="sub_title">해상수출입</p>
+            <hr style="border: solid 1px black;">
+            <h2>FEG의 해상 운송업무</h2>
+            <br>
+            <p>
+                FEG는 International Freight Forwarder로서 국제운송, 통관, 내륙운송, 포장, 보관 등 고객사들의 수출입 물류 전반을 책임집니다.
+                해상운송에 있어서는 기본적 스케줄 안내는 물론이고 Surrender 여부 확인, Delay 가능성이 상존하는 운송기간 내 Tracing,
+                운송 중 파손 여부 확인 및 신속한 대처 등에 주안점을 두고 서비스를 제공합니다.
+            </p>
+        </div>
+
+        <div class="img-wrap" style="text-align: center;">
+            <img src="/static/image/maintask/sea.jpg" class="be_img">
+            <img src="/static/image/maintask/sea_small.jpg" class="af_img">
+        </div>
+
+        <div class="li_text" style="margin-top:50px;">
+            <li>1. 수출자가 견적요청 및 스케줄 문의 후 FEG에 선적의뢰. - FEG는 수출입자 간 운송계약내용(인코텀즈)확인 및 통관/운송위탁여부 확인.</li>
+            <li>2. FEG 가 선사에 해당 스케줄 예약 (Booking and
+                <a href="#" data-bs-toggle="tooltip" data-bs-title="Shipping Request: 선적요청 전자문서로 화주가 선적을 담당하는 선사 또는 포워 더에게
+                                선적예약을 하기 위한 전자문서.">Shipping Request</a>)
+            </li>
+            <li>3. FEG 운송팀에서 수출자의 출고지에서 물품을 적재하여 LCL의 경우 - 수출보세창고(
+                <a href="#" data-bs-toggle="tooltip"
+                    data-bs-title="CFS(Container Freight Station):LCL화물을 집하 및 컨테이너로 적입/적출 작업하는 장소">
+                    CFS
+                </a>),
+                <a href="#" data-bs-toggle="tooltip"
+                    data-bs-title="FCL:1개 컨테이너 내에 1개 회사의 화물이 적재되는 경우를 FCL(full container load)라고 하고 이런 화물을 FCL cargo라고 한다. FCL cargo를 취급하는 곳을 C.Y.(container yard)라고 한다">
+                    FCL
+                </a>의 경우 컨테이너 야드(
+                <a href="#" data-bs-toggle="tooltip" data-bs-title="CY (container yard):컨테이너의 하역작업 전후 컨테이너의 인도.인수 및 보관을 위해 컨테이너를 쌓
+                            아 두는 장소">
+                    CY</a>)에 반입.
+            </li>
+
+            <li>4. 보세창고나 야드에서 물품 반입 확인 및 사이즈/무게 측정. * 해상 운송비는 용적(부피)이나 무게 중 큰 값을 기준으로 청구 됨
+                * FCL의 경우 반입/반출/장치 등의 절차가 전산화되어 운영되지만,
+                <a href="#" data-bs-toggle="tooltip"
+                    data-bs-title="LCL(Less than Container Load):일반적으로 컨테이너 하나에 소량의 화물을 두가지 이상 싣는 것을 LCL cargo라고 한다.">
+                    LCL</a>의 경우 반입절차 시, 운송기사의 ‘도착보고’ 절차가 중요!
+            </li>
+
+            <li>5. FEG 통관팀에서 수출자의 선적서류(
+                <a href="#" data-bs-toggle="tooltip"
+                    data-bs-title="C/I(Commercial Invoice):상업송장이란 판매자가 매매계약 이행 사실을 기재해 구매자에게 발송하는 문서이다">
+                    C/I,</a>
+
+                <a href="#" data-bs-toggle="tooltip"
+                    data-bs-title="P/L(Packing List):포장된 물품의 내용을 설명하는 문서. 포장명세서란 선적화물의 포장 및 포장 단위별 명세와 단위별 순중량, 총중량, 포장의 일련번호 등을 기재한 문서를 말한다">
+                    P/L</a>
+                )를 바탕으로 세번 부호(
+
+                <a href="#" data-bs-toggle="tooltip"
+                    data-bs-title="HSCODE:국제통일상품분류체계에 따라 대외 무역거래 상품을 총괄적으로 분류한 품목분류 코드">
+                    HSCODE</A>
+                ) 결정 후, 세관에 수출신고->
+                승인 후 세관에서 수출신고필증(약칭 면장) 발급. 이는, 선사의 서류마감기일 내 이루어져야 함.
+            </li>
+            <li>6. CFS나 CY에 반입되었던 화물은, 선박의 접안 일정에 따라 터미널에 반입된 후 선적 대기.
+                이후 선박은 화물 적재 후 목적항으로 출항.</li>
+            <li>7. 출항 당일, 선사는 FEG에, FEG는 수출자에 운송장(
+                <a href="#" data-bs-toggle="tooltip"
+                    data-bs-title="B/L(Bill of Lading):선하증권경제학사전 선박회사가 탁송하물에 대하여 발행하는 화물대표증권이다">
+                    B/L</a>
+                ) 발급.
+                이 때, 선사에서 직접 발급한 B/L에 대한 상대적 개념으로 포워더가 발급한 B/L을 House B/L이라고 함.
+                * B/L은 Original,
+                <a href="#" data-bs-toggle="tooltip"
+                    data-bs-title="Surrender : 유가증권 권리 포기. original B/L이 도착하는데 오래걸리거나 분실의 우려 또는 수입대금의 지불이 끝났을 시 빠른 통관진행을 위해 화주에게 요청하여 진행하는 방식.">
+                    Surrender</a>
+                두 가지 방식으로 발급받을 수 있으며, Original의 경우 도착지에서 FEG대리점(포워더의 해외 대리점)에 원본
+                접수 후 화물 인도승인처리 가능 _ 상세 내용은 용어설명에서 확인
+            </li>
+            <li>8. 출항일에 선사는 해외대리점에 해당 건 출항 통지 및 관련 서류 전달. FEG도 동시에 해외대리점(혹은 지사)에 출항통지 및 서류 전달.</li>
+            <li>9. 선사 해외대리점은(선사) FEG 해외대리점(포워더)에 도착통지(
+                <a href="#" data-bs-toggle="tooltip" data-bs-title="A/N(Arrival Notice):선박회사는 화물을 적재한 본선이 수입항에 도착할 무렵에 선하등권면의 통지처
+                            notify party에 기재된 수입자에게 화물이 도착하였다는 것을 통지하게 되는데 이를 착하통지서라고 함">
+                    A/N</a>
+                )를 하고,
+                FEG 해외대리점은 수입자(Consignee)에 도착통지(A/N)를 함.
+                보통 이와 동시에 선사나 포워더는 수입자 부대비용 부담액에 대한 청구서도 함께 발송.
+            </li>
+            <li>10. 수입자와 FEG는 해당 청구서에 대한 금액을 납부 하고,
+                각 포워더와(수입자의 경우) 선사(포워더의 경우) 측에 Original B/L 내지는 Surrendered Copy B/L을 접수하여 화물인도처리(
+                <a href="#" data-bs-toggle="tooltip" data-bs-title="D/O(Delivery Order) : 물품의 보관자에 대해 그 물품을 증권의 정당한 소지인에게 인도해야 하는 것을 지시하는 대표적인 증서이다. 이것은 선박회사 또는 그 대리인이 선장에 대하여 해당 화물의 인도를 지시하는 증서이다. 
+                                선화증권의 소지인은 이 증권을 선박이 도착하는 항만에서 운송인 또는 그 대리인에게 제시하고 화물의 인도를 청구하면 대리점에서는 D/O를 발행하게 된다.">
+                    D/O</a>
+                )를 요청.
+            </li>
+            <li>11. 화물은 선박에서 터미널로 양하 된 후, CY(FCL)나 CFS(보세창고, LCL의 경우)로 운송되어 반입됨.
+                (이 때, 창고는 화물에의 이상 유무를 확인하여 수하인인 포워더에 통지)</li>
+            <li>12. 선사는 포워더에, 포워더는 화주에 해당 화물 수납 확인 후 화물인도(D/O)처리.</li>
+            <li>13. 해외대리점의 통관사 내지는 수입자의 통관사는 선적서류(B/L, CI, PL)로 수입통관 진행. 수출국과의 관계에 따른 FTA 관세감면 혜택과 수입국의
+                세관법령에 따른 사항들을 고려하여 세번 결정 후 신고 진행.
+                -> 세관의 승인(수입 국가의 통관 환경에 따라 소요시간 다름)</li>
+            <li>14. 세관승인 후, FEG해외 대리점의 운송사나 수입자의 지정 운송인은 보세창고에서 화물을 적재 하여 배송지로 배송.
+                배송지에서 수취인 서명 등의 수취확인서 확보.</li>
+            <li>15. FEG의 해외 대리점은 FEG에 배송완료 통지(
+                <a href="#" data-bs-toggle="tooltip"
+                    data-bs-title="POD(Proof of Delivery):화물을 이상 없이 수하인에게 잘 인도하였다는 증서로 , 보통 B/L이나 AWB에 수하인 SIGN하여 수취확인자료로 작성하여 수출지에 보내준다.">
+                    POD</a>
+                제공) -> 배송 최종 완료
+            </li>
+
+            <li>*** 상기는 FEG를 통한 수출 절차이며 수입의 경우, ‘FEG의 해외 대리점’을 ‘FEG’로 대입하여 적용.</li>
+            <li>*** 상기 절차는 한국을 포함한 대부분의 물류 거점도시들의 일반적 수출입 절차에 기반하였으며, 일부 국가의 절차 및 환경은 다를 수 있음</li>
+        </div>
+
+        <div class="space"></div>
+</div>
+        {% include 'base/footer.html' %}
+</body>
+
+</html>

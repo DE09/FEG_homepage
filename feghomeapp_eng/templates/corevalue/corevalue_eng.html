@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    {% include 'base/navbar_eng.html' %}
+
+<body>
+    <div class="doorimg">
+        <img src="/static/image/maintask/business area_eng.jpg" style="width : auto; height : 250px"
+            class="d-block w-100">
+    </div>
+
+    <div class="tabs">
+        <ul class="nav nav-tabs submenu justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{% url 'corevalue_eng' %}">PROFESSIONAL CUSTOMER
+                    CARE</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="{% url 'rational_price_eng' %}">RATIONAL PRICE</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="tasktext">
+
+        <div class="space">
+            <p class="sub_title">PROFESSIONAL CUSTOMER CARE</p>
+            <hr style="border: solid 1px black;">
+        </div>
+        <div style="text-align: center;">
+            <img src="/static/image/corevalue/corevalue.jpg" class="be_img">
+            <img src="/static/image/corevalue/corevalue_small.jpg" class="af_img">
+        </div>
+
+
+    </div>
+    <div class="space"></div>
+
+    {% include 'base/footer_eng.html' %}
+</body>
+
+</html>

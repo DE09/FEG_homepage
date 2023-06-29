@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    {% include 'base/navbar.html' %}
+
+<body>
+    <div class="doorimg">
+        <img src="/static/image/maintask/business area.jpg" style="width : 100%; height : auto">
+    </div>
+
+    <div class="tabs">
+        <ul class="nav nav-tabs submenu justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="{% url 'sea' %}">해상수출입</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active " aria-current="page" href="{% url 'air' %}">항공수출입</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="{% url 'customs' %}">수출입통관</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 항공수출입 -->
+    <div class="tasktext">
+        <div style="margin-bottom: 50px;">
+            <p class="sub_title">항공수출입</p>
+            <hr style="border: solid 1px black;">
+            <h2>FEG의 항공 운송업무</h2>
+            <p>
+                FEG는 International Freight Forwarder로서 국제운송, 통관, 내륙운송, 포장, 보관 등 고객사들의 수출입 물류 전반을 책임집니다.
+                항공운송에 있어서는 기본적 스케줄 안내는 물론이고, 신속한 배송이 목적인 항공운송의 적시성을 최대화하기 위해
+                지속적 Tracing 및 성수기 다양한 루트의 옵션을 제시함으로써 고객사의 요구에 부응하는데 중점을 두고 있습니다.
+            </p>
+        </div>
+
+        <div class="img-wrap" style="text-align: center;">
+            <img src="/static/image/maintask/air.jpg" class="be_img">
+            <img src="/static/image/maintask/air_small.jpg" class="af_img">
+        </div>
+
+        <div class="li_text" style="margin-top:50px;">
+            <li>1. 수출자가 견적요청 및 스케줄 문의 후 FEG에 선적의뢰. - FEG는 수출입자 간 운송계약내용(인코텀즈)확인 및 통관/운송위탁여부 확인</li>
+            <li>2. FEG 가 항공사에 해당 스케줄 예약 (Booking and Shipping Request)</li>
+            <li>3. FEG 운송팀에서 수출자의 출고지에서 물품을 적재하여 FEG의 공항 창고에 반입.</li>
+            <li>4. 창고에서 화물 사이즈 및 무게 측정 - 운송비는 중량과 용적(부피)의 무게 환산 값 중 큰 값(Chargeable Weight)에 근거하여 청구 됨</li>
+            <li>5. FEG 통관팀에서 수출자의 선적서류(
+                <a href="#" data-bs-toggle="tooltip"
+                    data-bs-title="C/I(Commercial Invoice):상업송장이란 판매자가 매매계약 이행 사실을 기재해 구매자에게 발송하는 문서이다">
+                    C/I,</a>
+                <a href="#" data-bs-toggle="tooltip"
+                    data-bs-title="P/L(Packing List):포장된 물품의 내용을 설명하는 문서. 포장명세서란 선적화물의 포장 및 포장 단위별 명세와 단위별 순중량, 총중량, 포장의 일련번호 등을 기재한 문서를 말한다">
+                    P/L</a>
+                )를 바탕으로 세번 부호(
+                <a href="#" data-bs-toggle="tooltip"
+                    data-bs-title="HSCODE:국제통일상품분류체계에 따라 대외 무역거래 상품을 총괄적으로 분류한 품목분류 코드">
+                    HSCODE</a>
+                ) 결정 후, 세관에 수출신고-> 승인 후 세관에서 수출신고필증(약칭
+                면장) 발급. 이는, 항공사의 서류마감기일 내 이루어져야 함.
+            </li>
+            <li>6. FEG 창고에서 화물을 항공사 창고로 이고 및 출항대기</li>
+            <li>7. 출항 당일, 항공사는 FEG에, FEG는 수출자에 실측 무게와 부피 무게를 기입한 AWB 교부 -> 이 때,
+                <a href="#" data-bs-toggle="tooltip" data-bs-title="AWB : 항공운송장, 항공운송을 위하여 화물이 수취되었음을 증명하는 운송서류">
+                    AWB</a>
+                상의
+                <a href="#" data-bs-toggle="tooltip"
+                    data-bs-title="Chargeable Weight : 운임계산의 기준이 되는 중량. 통상 화물의 실제중량과 용적중량 중 무거운 쪽으로 계산되는 무게">
+                    Chargeable weight </a>
+                에 근거 하여 운임 납부
+            </li>
+            <li>8. 출항일에 항공사는 해외대리점에 해당 건 출항 통지 및 관련 서류 전달. FEG도 동시에 해외대리점(혹은 지사)에 출항통지 및 서류 전달.</li>
+            <li>9. 항공사 해외대리점은(항공사) FEG 해외대리점(포워드)에 도착통지(A/N)를 하고, FEG 해외대리점은 수입자(Consignee)에 도착통지(A/N)를 함.
+                보통 이와 동시에 항공사나 포워더는 수입자 부대비용 부담액에 대한 청구서도 함께 발송.</li>
+            <li>10. 수입자와 FEG는 해당 청구서에 대한 금액을 납부 하고 각 포워더(수입자의 경우)와 항공사(포워더의 경우)에 화물인도처리(
+                <a href="#" data-bs-toggle="tooltip" data-bs-title=" D/O(Delivery Order) : 물품의 보관자에 대해 그 물품을 증권의 정당한 소지인에게 인도해야 하는 것을 지시하는 대표적인 증서이다. 
+                                이것은 선박회사 또는 그 대리인이 선장에 대하여 해당 화물의 인도를 지시하는 증서이다. 
+                                선화증권의 소지인은 이 증권을 선박이 도착하는 항만에서 운송인 또는 그 대리인에게 제시하고 화물의 인도를 청구하면 대리점에서는 D/O를 발행하게 된다.">
+                    D/O</a>
+                )를 요청.
+            </li>
+            <li>11. 화물은 기체에서 터미널로 양하 된 후, 항공사로부터 지정 된 보세창고로 운송되어 반입됨 (이 때, 창고는 화물에의 이상 유무를 확인하여 수하인인 포워더에
+                통지)</li>
+            <li>12. 항공사는 포워더에, 포워더는 화주에 해당 화물 수납 확인 후 화물인도(D/O)처리. (수입지가 한국인 경우, 이 처리 과정은 전산화 되어있음)</li>
+            <li>13. FEG 해외대리점(훼밀리파트너)의 통관사 내지는 수입자의 통관사는 선적서류(B/L, CI, PL)로 수입통관 진행. 수출국과의 관계에 따른 FTA 관세감면
+                혜택과 수입국의 세관법령에 따른 사항들을 고려하여 세번결정 후 신고 진행. -> 세관의 승인(수입 국가의 통관 환경에 따라 소요시간 다름)</li>
+            <li>14. 세관승인 후, FEG해외 대리점의 운송사나 수입자의 지정 운송인은 항공사의 보세창고에서 화물을 적재 하여 배송지로 배송. 배송지에서 수취인 서명 등의
+                수취확인서 확보.</li>
+            <li>15. FEG의 해외 대리점은 FEG(선적지)에 배송완료 통지(
+                <a href="#" data-bs-toggle="tooltip"
+                    data-bs-title="POD(Proof of Delivery):화물을 이상 없이 수하인에게 잘 인도하였다는 증서로 , 보통 B/L이나 AWB에 수하인 SIGN하여 수취확인자료로 작성하여 수출지에 보내준다.">
+                    POD</a>
+                제공) -> 배송 최종 완료
+            </li>
+            <li>*** 상기는 FEG를 통한 수출 절차이며 수입의 경우, ‘FEG의 해외 대리점’을 ‘FEG’로 대입하여 적용.</li>
+            <li>*** 상기 절차는 한국을 포함한 대부분의 물류 거점도시들의 일반적 수출입 절차에 기반하였으며, 일부 국가의 절차 및 환경은 다를 수 있음</li>
+        </div>
+    </div>
+
+    <div class="space"></div>
+
+    {% include 'base/footer.html' %}
+</body>
+
+
+
+</html>

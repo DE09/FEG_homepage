@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    {% include 'base/navbar.html' %}
+
+<body>
+    <div class="doorimg">
+        <img src="/static/image/intro/intro_back.jpg" style="width : 100%; height : auto">
+    </div>
+
+
+    <div class="tabs">
+        <ul class="nav nav-tabs submenu justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="{% url 'intro' %}">인사말</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active " aria-current="page" href="{% url 'history' %}">연혁</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="{% url 'ogchart' %}">조직도</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="{% url 'sponsorship' %}">후원활동</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="{% url 'access' %}">오시는길</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 연혁 -->
+    <div class="tasktext">
+        <div>
+            <p class="sub_title">연혁</p>
+            <hr style="border: solid 1px black;">
+        </div>
+        <div style="text-align: center;">
+            <img src="/static/image/intro/history.jpg" class="be_img">
+            <img src="/static/image/intro/history_small.jpg" class="af_img">
+        </div>
+    </div>
+
+
+
+    <div class="bt_mg"></div>
+    {% include 'base/footer.html' %}
+</body>
+
+</html>

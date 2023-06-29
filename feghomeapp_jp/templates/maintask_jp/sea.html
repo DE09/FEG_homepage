@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include 'base_jp/head.html' %}
+
+  <body>
+    <div class="doorimg">
+        <img src="/static/image/jp/maintask_jp.jpg" style="width : 100%; height : auto">
+    </div>
+
+    <div class="tabs">
+      <ul class="nav nav-tabs submenu justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{% url 'sea_jp' %}">海上輸出入</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="{% url 'air_jp' %}">航空輸出入</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 해상수출입     -->
+    <div class="tasktext">
+      <div style="margin-bottom: 50px">
+        <p class="sub_title">FEGの海上運送業務</p>
+        <hr style="border: solid 1px black" />
+        <h2>FEGの海上運送業務</h2>
+        <br />
+        <p>
+          FEGはInternational Freight Fowarderとして国際運送、通関、内陸運送、褒章、保管など顧客会社らの輸出入物流全判の責任を負っております。海上運送においては基本的スケジュール案内はもちろん<a
+            href="#"
+            data-bs-toggle="tooltip"
+            data-bs-title="Surrender(【元地回収】サレンダー) : B/L未着や紛失などの危険を防ぐため、B/L発行地においてB/Lを船会社に預けること。航海日数が短いアジア航路ではB/Lより先に貨物が到着する場合があるが、この方法を利用することにより、B/Lを待たずに貨物の引取りができるようになる。ただし、L/C決済ではB/Lが必要となるため、この方法は使用できない。"
+            >Surrender</a
+          >可否の確認、Delay可能性が常に存在する運送機関内Tarcing,運送中破損可否の確認及び迅速な対処などに主眼を置いてサービスを提供致します。
+        </p>
+      </div>
+
+      <div class="img-wrap" style="text-align: center">
+        <img src="/static/image/jp/sub11img.jpg" class="be_img " />
+        <img src="/static/image/jp/sub11img.jpg" class="af_img" />
+      </div>
+
+      <div class="li_text" style="margin-top: 50px">
+        <li>1. 輸出者が見積りの要請及びスケジュールの問い合わせ後FEGに船籍依頼。－FEGは輸出入者間の運送契約内容（インコトムジュ）確認及び通関/運送委託の可否確認</li>
+        <li>2. FEGが船社に該当スケジュール予約（Booking and <a href="#" data-bs-toggle="tooltip" data-bs-title="Shipping Request: フォワーダ会社からSHIPPERまたは乙仲に伝えるMASTER BL作成方法とブッキングの内容を案内">Shipping Request</a>)</li>
+        <li>
+          3. FEG運送チームで輸出者の出庫地で物品を積載してLCLの場合-保税倉庫（<a href="#" data-bs-toggle="tooltip" data-bs-title="CFS(Container Freight Station):CONTAINER FREIGHT STATION, LCL貨物を集めコンテナに積載、搬出する場所"> CFS </a>),FCLの場合コンテナヤード（<a
+            href="#"
+            data-bs-toggle="tooltip"
+            data-bs-title="CY (container yard):コンテナの荷役作業前後にコンテナの渡しと保管のためコンテナを置く場所。"
+          >
+            CY </a
+          >）に搬入
+        </li>
+
+        <li>
+            4. 保税倉庫やヤードで物品搬入の確認及びサイズ/重さを測定　＊海上運送費は容積(かさ)や重さの中で大きい値を基準で請求され　＊FCLの場合、搬入/搬出/装置などの手続きが電算化して運営されるが、LCLの場合、搬入手続きの際、運送技師の到着報告が重要
+        </li>
+
+        <li>
+          5. FEG通関チームで輸出者の船積書類(
+          <a href="#" data-bs-toggle="tooltip" data-bs-title="CI(Commercial Invoice):商業送り状という販売者が売買契約の履行の事実を記載して購入者に発送している文書である"> C/I,</a>
+
+          <a href="#" data-bs-toggle="tooltip" data-bs-title="PL(Packing List):梱包された物品の内容を説明する文書。 梱包明細書という船籍貨物の梱包や梱包の単位別明細と単位別Net Weight、gross weight、梱包の一連番号などを記載した文書という"> P/L</a>
+          )をもとに細番符号(
+
+          <a href="#" data-bs-toggle="tooltip" data-bs-title="HSCODE:国際統一商品分類体系によって対外貿易取引商品を総括的に分類した品目分類コード"> HSCODE</a>
+          ) 決定後、税関に輸出申告->承認後、税関で輸出申告証(略称の免状)発給。これは、船社の書類取引期間の行わなければならないこと。
+        </li>
+        <li>6. CFSやCYに搬入された貨物は、船舶の接岸の日程によってターミナルに搬入された後、船積待機。後、船舶は貨物積載後目的空に出航。</li>
+        <li>
+            7. 出港当日、船社はFEGに、FEGは輸出者に運送状(
+          <a href="#" data-bs-toggle="tooltip" data-bs-title="B/L(Bill of Lading):船荷証券海上輸送で使われる物流用語。 船会社が船積み地点で貨物を受け取ったことと、指定の目的地までの運送及びその荷揚げ港で貨物受取人に貨物を引き渡すことを約した有価証券のこと。"> B/L</a>
+          ) の発給。この時、船社で直接発給したB/Lに対する相対的概念でフォワーダーが発給したB/LをHouse B/Lという。*B/LはOriginal、
+          <a href="#" data-bs-toggle="tooltip" data-bs-title="Surrender(【元地回収】サレンダー) : B/L未着や紛失などの危険を防ぐため、B/L発行地においてB/Lを船会社に預けること。航海日数が短いアジア航路ではB/Lより先に貨物が到着する場合があるが、この方法を利用することにより、B/Lを待たずに貨物の引取りができるようになる。ただし、L/C決済ではB/Lが必要となるため、この方法は使用できない。"> Surrender</a>
+          二つの方法で発給が認められ、Originalの場合、到着地でFEGの代理店(フォワーダーの海外代理店)に原本の受付後の貨物の引き渡し承認の処理可能_詳細内容は用語説明で確認
+        </li>
+        <li>8. 出空日に船社は海外代理店に該当件の出港の通知や関連書類伝達。FEGも同時に海外代理店(あるいは支社)に出港の通知や書類配信。</li>
+        <li>
+            9. 船社の海外代理店は(船社)FEGの海外代理店(フォワーダー)に到着通知(A/N)をして、FEG海外代理店は輸入者(Consignee)に到着通知(A/N)をする。普通これと同時に船社やフォワーダーは輸入者の付帯費用の負担額に対する請求書も一緒に送信。
+        </li>
+        <li>
+            10. 輸入者とFEGは当該請求書に対する金額を納付し、各フォワーダーと(輸入者の場合)船社(フォワーダーの場合)側にOriginal B/LあるいはSurrendered Copy B/Lを受け付け、貨物引き渡しの処理(
+          <a
+            href="#"
+            data-bs-toggle="tooltip"
+            data-bs-title="D/O(Delivery Order) : 船会社が本状持参人への貨物の引渡しを、ターミナル（ＣＹ/ＣＦＳ）オペレータに指示する書類。荷渡し指図書のこと。Ｄ/Ｏを提示することで、ＣＹ、ＣＦＳから貨物を受け取れる。"
+          >
+            D/O</a
+          >
+          )を要請。
+        </li>
+        <li>11. 貨物は船舶でターミナルに降ろされた後、CY(FCL)やCFS(保税倉庫、LCLの場合)に輸送されて搬入される。(この時、倉庫は貨物の異常有無を確認して荷受人であるフォワーダーに通知)</li>
+        <li>12. 船社はフォワーダーに、フォワーダーは船社に該当貨物の収納確認後、貨物の引き渡し(D/O)処理。</li>
+        <li>13. 海外代理店の通関士あるいは輸入者の通関士は、船積書類(B/L、CI、PL)で輸入通関進行。輸出国との関係によるFTA関税減免の特典と受入国の税関法令による事項を考慮して細番決定後の申告を進行。->税関の承認(輸入国家の通関環境によって所要時間が違う)</li>
+        <li>14. 税関承認後、FEG海外代理店の運送会社や輸入者の指定運送人は保税倉庫で貨物を積載して配送地に配送。お届け先から受取人の署名などの受け取り確認書を確保。</li>
+        <li>
+            15. FEGの海外代理店はFEGに配送完了通知(
+          <a href="#" data-bs-toggle="tooltip" data-bs-title="POD(Proof of Delivery):貨物を問題なく荷受人に納入できたという証書、B/LやAWBに荷受人のSIGNして受取確認資料として作成して輸出地に送る。"> POD</a>
+          提供)->配送最終完了
+        </li>
+
+        <li>*** 上記はFEGを通じた輸出手続きであり、輸入の場合、'FEGの海外代理店'を'FEG'に代入して適用。</li>
+        <li>*** 上記の手続きは韓国を含むほとんどの物流拠点都市の一般的な輸出入手続きに基づいており、一部国家の手順及び環境は異なる可能性がある。</li>
+      </div>
+
+      <div class="space"></div>
+    </div>
+    {% include 'base_jp/footer.html' %}
+  </body>
+</html>
