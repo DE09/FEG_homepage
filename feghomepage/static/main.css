@@ -93,6 +93,13 @@
   font-size: 26px;
 }
 
+.mainworldmap_wrap{
+  width: 100%;
+}
+
+.mainworldmap_wrap > img{
+  margin: 30px 0;
+}
 
 .fe_mainmap .map {
   margin-top: 30px;
@@ -132,6 +139,11 @@
 
 .sub_li a {
   color: white;
+}
+
+.nav-item{
+  box-sizing: border-box;
+  padding-top: 20px ;
 }
 
 .other_lang {
@@ -270,6 +282,10 @@
   justify-content: space-between;
   font-size: 15px;
   margin-bottom: auto;
+}
+
+.txt_inrow:nth-last-child(1){
+  justify-content: flex-start;
 }
 
 
