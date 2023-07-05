@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    {% include 'base/navbar.html' %}
+
+<body>
+    <div class="doorimg">
+        <img src="/static/image/intro/intro_back.jpg" style="width : 100%; height : auto">
+    </div>
+
+    <div class="tabs">
+        <ul class="nav nav-tabs submenu justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="{% url 'intro' %}">인사말</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="{% url 'history' %}">연혁</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="{% url 'ogchart' %}">조직도</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="{% url 'sponsorship' %}">후원활동</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{% url 'access' %}">오시는길</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 오시는 길 -->
+    <div class="tasktext">
+        <div>
+            <p class="sub_title">오시는 길</p>
+            <hr style="border: solid 1px black;">
+            <div class="space"></div>
+        </div>
+
+        <div class="container">
+            <div>
+                <h5 class="adr_title">본사</h5>
+                <p class="adr_text">서울특별시 강서구 양천로 551-24, 803호~806호 (가양동,한화비즈메트로2차) 우)07532
+                    <br>
+                    RM.803~806, HANHWA BIZ METRO2, 551-24, YANGCHEON-RO, GANGSEO-GU,SEOUL, KOREA ZIP:
+                    07532
+                </p>
+            </div>
+            <div style="text-align: center;">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d790.7101771660552!2d126.86163482924404!3d37.55881656186878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9c06b7cd999b%3A0x3cc890f017fa1922!2z7ISc7Jq47Yq567OE7IucIOqwleyEnOq1rCDslpHsspzroZwgNTUxLTI0!5e0!3m2!1sko!2skr!4v1676960646684!5m2!1sko!2skr"
+                    width="1200" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" class="int_img"></iframe>
+
+            </div>
+            <div class="space"></div>
+            <div>
+                <h5 class="adr_title">인천지사</h5>
+                <p class="adr_text">인천광역시 서해대로 210번길 45 301호<br>
+                    TEL : 032-889-4026<br>
+                    FAX : 032-889-4027</p>
+            </div>
+            <div style="text-align: center;">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1883.4972284850542!2d126.62760864736313!3d37.4453217862576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b786b06a60859%3A0x5d2ec39df0d927cd!2z7J247LKc6rSR7Jet7IucIOykkeq1rCDshJztlbTrjIDroZwyMTDrsojquLggNDU!5e0!3m2!1sko!2skr!4v1676960912139!5m2!1sko!2skr"
+                    width="1200" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" class="int_img"></iframe>
+            </div>
+            <div class="space"></div>
+
+            <h5 class="adr_title">부산지사</h5>
+            <p class="adr_text">부산광역시 중구 중앙대로 95, 3층 303호(중앙동4가, 동진빌딩)<br>
+                TEL : 070-7727-3543 / 051-466-0203<br>
+                FAX : 051-797-8303</p>
+
+            <div style="text-align: center;">
+                    <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3264.0303792026543!2d129.03527231120563!3d35.10595229850361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3568e970c2b03c75%3A0x48c4bd83cfcaf2b6!2z67aA7IKw6rSR7Jet7IucIOykkeq1rCDspJHslZnrjIDroZwgOTU!5e0!3m2!1sko!2skr!4v1681366642488!5m2!1sko!2skr" 
+                    width="1200" height="350" style="border:0;" allowfullscreen="" loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade" class="int_img"></iframe>
+
+            </div>
+        </div>
+
+        <div class="bt_mg"></div>
+
+        <div class="container">
+            <h5 class="adr_title">해외지사</h5>
+            <div class="row">
+                <div class="txt_inrow">
+                    <div class="col-3 col-sm-4">
+                        <span class="branch_t">F.E.G. [TIANJIN]</span><br>
+                        RM B-1802, JINGCAI BLDG,<br>
+                        DAGU SOUTH ROAD 459,<br>
+                        HEXI DISTRICT, TIANJIN, CHINA<br>
+                        TEL : 86-22-8386-9624/21<br>
+                        FAX : 86-22-8386-8529<br>
+                    </div>
+                    <div class="col-3 col-sm-4">
+                        <span class="branch_t">F.E.G. [SHANGHAI]</span><br>
+                        ROOM 306, JINDADI BLDG, SIPING ROAD 773,<br>
+                        HONGKOU DISTRICT, SHANGHAI, CHINA <br>
+                        TEL : 86-21-5557-1001(REP.)<br>
+                        FAX : 86-21-5512-6911<br>
+                    </div>
+                    <div class="col-3 col-sm-4">
+                        <span class="branch_t">F.E.G. [SHENZHEN]</span><br>
+                        RM 2416, CUNJIN BLDG,<br>
+                        SOUTH DONGMEN ROAD,<br>
+                        LUOHU DISTRICT, SHENZHEN,<br>
+                        GUANGDONG, CHINA<br>
+                        TEL : 86-755-8215-7011(REP.)<br>
+                        FAX : 86-755-8215-7230<br>
+                    </div>
+                </div>  
+
+                <div class="w-100 d-none d-md-block" style="margin-bottom:30px;"></div>
+
+                <div class="txt_inrow">
+                    <div class="col-3 col-sm-4">
+                        <span class="branch_t">F.E.G. [HONGKONG]</span><br>
+                        RM.F, 20/F, REASON GROUP TOWER,<br>
+                        403-413 CASTLE PEAK ROAD<br>
+                        TSUEN WAN, NEW TERRITORIES<br>
+                        HONG KONG<br>
+                        TEL : 852-3468-7160(REP.)<br>
+                        FAX : 852-3468-7166<br>
+                    </div>
+                    <div class="col-3 col-sm-4">
+                        <span class="branch_t">F.E.G. [HOCHIMINH]</span><br>
+                        6 FL, NO. 331, NGUYEN TRONG TUYEN TRONG TUTEN STR.,<br>
+                        WARD 10, PHU NHUAN DIST.,<br>
+                        HCMC, VIETNAM<br>
+                        TEL : 84-8-3991-8880(REP.)<br>
+                        FAX : 84-8-3991-8826<br>
+                    </div>
+                    <div class="col-3 col-sm-4">
+                        <span class="branch_t">F.E.G. [HANOI]</span><br>
+                        RM, 506, 5FL, 535 KIM MA STREET,<br>
+                        BA DINH DISTRICT, HANOI, VIETNAM<br>
+                        TEL : 84-04-6274-1601/1605<br>
+                        FAX : 84-04-6274-1609<br>
+                    </div>
+                </div>
+                <div class="w-100 d-none d-md-block" style="margin-bottom:30px;"></div>
+
+                <div class="txt_inrow" >
+                    <div class="col-3 col-sm-4">
+                        <span class="branch_t">F.E.G. [TOKYO]</span><br>
+                        NO. 308, 17-8, IKEBUKURO 2-CHOME,<br>
+                        TOSHIMA-KU, TOKYO, 171-0014, JAPAN<br>
+                        TEL: 81-3-6868-5570<br>
+                        FAX:81-3-6685-2917<br>
+                    </div>
+                    <div class="col-3 col-sm-4">
+                        <span class="branch_t">F.E.G. [JAKARTA]</span><br>
+                        Komplek Gading Bukit Indah Blok H/26-27, Lantai 2<br>
+                        RT 03, RW 015, Kelurahan Kelapa Gading Barat<br>
+                        Kec. Kelapa Gading, Kota Adm. Jakarta Utara<br>
+                        Provinsi DKI Jakarta 14240<br>
+                        TEL : +82-10-4513-5781M<br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bt_mg"></div>
+    {% include 'base/footer.html' %}
+</body>
+
+</html>

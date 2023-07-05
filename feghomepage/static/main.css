@@ -1,0 +1,580 @@
+/* banner */
+
+.navbar-brand {
+  width: 20%;
+  height: auto;
+}
+
+.fe_topbanner {
+  background: #293959;
+  text-align: center;
+}
+
+.tb_div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.toplogo {
+  width: 100%;
+  height: 70px;
+}
+
+.bottom_lg {
+  width: 200px;
+  height: 70px;
+}
+
+.bottom_txt {
+  font-size: smaller;
+}
+
+/* main-page */
+.title {
+  font-weight: bold;
+}
+
+.title:hover {
+  color: darkturquoise;
+}
+
+.bottom_image {
+  width: 100%;
+  height: auto;
+  min-width: 1200px;
+  text-align: center;
+  position: relative;
+
+}
+
+/* .image_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-size: 20px;
+} */
+
+.bottom_sub_total_image {
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  /* position: relative; */
+}
+
+.bottom_sub_image {
+  height: auto;
+  /* position: relative; */
+  margin: 25px 50px 25px 50px;
+}
+
+.bottom_sub_image_text {
+  /* top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  color: white;
+  margin: auto;
+}
+
+.fe_mainmap {
+  margin: 0 auto;
+  margin-top: 90px;
+  margin-bottom: 70px;
+  width: 1200px;
+  position: relative;
+  text-align: center;
+}
+
+.fe_mainmap .p {
+  font-size: 26px;
+}
+
+.mainworldmap_wrap{
+  width: 100%;
+}
+
+.mainworldmap_wrap > img{
+  margin: 30px 0;
+}
+
+.fe_mainmap .map {
+  margin-top: 30px;
+  width: 1200px;
+  height: 590px;
+}
+
+.bt_mg {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.space {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.sub_text {
+  width: 100%;
+}
+
+.submenu {
+  text-align: center;
+  width: 100%;
+  min-width: 1200px;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 10px;
+  margin: 0;
+  font-size: 20px;
+}
+
+.sub_li {
+  display: inline-block;
+  margin-right: 10px;
+  background: rgb(50, 80, 137);
+}
+
+.sub_li a {
+  color: white;
+}
+
+.nav-item{
+  box-sizing: border-box;
+  padding-top: 20px ;
+}
+
+.other_lang {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.other_lang li {
+  float: left;
+  margin-left: 5px;
+  font-size: smaller;
+}
+
+.other_lang li a {
+  text-decoration-line: none;
+  color: gray
+}
+
+/* intro page */
+
+.branch_t {
+  color: #3B90D1;
+  font-weight: 600;
+  font-size: 19px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.img-wrap {
+  width: 100%;
+  height: auto;
+  padding-bottom: auto;
+}
+
+.int_img .be_img .af_img {
+  top: 0;
+  left: 0;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+
+/* maintask page */
+
+.tasktext {
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+
+.li_text {
+  font-size: 15px;
+  line-height: 190%;
+  margin-top: 20px;
+  list-style: none;
+  margin: auto;
+}
+
+.sub_title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+
+.roundbox {
+  border-radius: 20px;
+  background: #e5e5e5;
+  padding: 20px 30px;
+  font-size: 15px;
+  line-height: 170%;
+}
+
+.adr_title {
+  font-weight: bold;
+}
+
+.adr_text {
+  font-size: medium;
+}
+
+
+/* fegsquare page */
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.input-field {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.m_img {
+  width: 1200px;
+}
+
+.t_img {
+  width: 800px;
+
+}
+
+.area {
+  position: relative;
+  /* absolute는 부모가 relative일 때 부모를 따라간다. */
+  width: 100%;
+  padding-bottom: 56.25%;
+  /* 16:9 비율 */
+}
+
+.video {
+  position: absolute;
+  width: 100%;
+  /* 부모에 맞게 꽉 채운다. */
+  height: 100%;
+}
+
+
+/* travel page */
+.travel {
+  width: 60%;
+  height: auto;
+  margin: auto;
+}
+
+
+.txt_inrow {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  margin-bottom: auto;
+}
+
+.txt_inrow:nth-last-child(1){
+  justify-content: flex-start;
+}
+
+
+/* inquiry */
+.messages {
+  text-align: center;
+  font-size: large;
+  color: grey;
+  margin-bottom: 50px;
+}
+
+
+/* Slideshow container */
+
+.slide {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes slide {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes slide {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+.slideshow-container {
+
+  position: relative;
+  margin: auto;
+
+}
+
+/* effect */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+
+@media screen and (max-width : 1200px) {
+
+  .bottom_image,
+  .bottom_sub_image {
+    width: 100%;
+    height: auto;
+  }
+
+  .sub_title {
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 70px;
+    margin-bottom: 30px;
+  }
+
+  .be_img {
+    display: block;
+  }
+}
+
+@media screen and (width < 1200px) {
+  .travel {
+    width: 100%;
+    height: auto;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width : 820px) {
+  .af_img {
+    display: none;
+  }
+  
+  .bottom_image,
+  .bottom_sub_image {
+    width: 100%;
+    height: auto;
+    margin: 15px 5px 15px 5px;
+  }
+
+  .bottom_sub_total_image {
+    width: 100%;
+    height: auto;
+    flex-wrap: nowrap;
+    text-align: center;
+  }
+
+  .bottom_sub_image_text{
+    text-align: center;
+  }
+}
+
+
+@media screen and (max-width : 820px) {
+
+  .bottom_image,
+  .bottom_sub_image {
+    width: 100%;
+    height: auto;
+    margin: 15px 5px 15px 5px;
+  }
+
+  .bottom_sub_total_image {
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    text-align: center;
+    /* position: relative; */
+  }
+
+  .title {
+    font-size: x-small;
+  }
+
+  .other_lang {
+    font-size: xx-small;
+  }
+
+  .sub_title {
+    font-size: 20px;
+    margin: auto;
+  }
+
+  .fe_topbanner,
+  .tabs {
+    display: none;
+  }
+
+  .toplogo {
+    width: 100%;
+    height: auto;
+  }
+
+  .int_img,
+  .m_img {
+    width: 100%;
+    height: 100%;
+    margin: 10px 10px 10px 10px;
+  }
+
+  .be_img {
+    display: none;
+  }
+
+  .af_img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 10px 10px 10px 0px;
+  }
+
+}
+
+@media screen and (max-width : 576px) {
+
+  .bottom_image,
+  .bottom_sub_image {
+    width: 100%;
+    height: auto;
+    margin: 15px 5px 15px 5px;
+  }
+
+  .navebar-brand {
+    width: 100px;
+    height: auto;
+  }
+
+  .sub_title,
+  .bottom_txt {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
+  .txt_inrow,
+  .branch_t {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    margin-bottom: auto;
+  }
+
+  .adr_title {
+    font-size: 15px;
+  }
+
+  .adr_text {
+    font-size: 10px;
+  }
+
+  .fe_topbanner,
+  .tabs,
+  .doorimg {
+    display: none;
+  }
+
+  .toplogo,
+  .bottom_lg {
+    width: 100px;
+    height: auto;
+  }
+
+  .int_img,
+  .m_img {
+    width: 100%;
+    height: 100%;
+    margin: 10px 5px 10px 5px;
+  }
+
+  .be_img {
+    display: none;
+  }
+
+  .af_img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 10px 10px 10px 0px;
+  }
+
+  .tasktext {
+    margin: auto;
+    width: 100%;
+    height: auto;
+  }
+}

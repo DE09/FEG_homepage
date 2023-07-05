@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    {% include 'base/navbar_eng.html' %}
+
+<body>
+    <div class="doorimg">
+        <img src="/static/image/maintask/business area_eng.jpg" style="width : 100%; height : auto">
+    </div>
+
+
+    <div class="tabs">
+        <ul class="nav nav-tabs submenu justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="{% url 'sea_eng' %}">OCEAN INBOUND AND OUTBOUND</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active " aria-current="page" href="{% url 'air_eng' %}">AIR INBOUND AND OUTBOUND</a>
+            </li>
+        </ul>
+    </div>
+
+
+    <!-- 항공수출입 -->
+    <div class="tasktext">
+        <div style="margin-bottom: 50px;">
+            <p class="sub_title">AIR INBOUND AND OUTBOUND</p>
+            <hr style="border: solid 1px black;">
+
+            <div style="text-align: center;">
+                <img src="/static/image/maintask/sea_eng.jpg" class="be_img">
+                <img src="/static/image/maintask/sea_eng_small.jpg" class="af_img">
+            </div>
+
+
+            <h2>FEG's Task :</h2>
+            <br>
+            <p>- Undertakes the process of movements of goods through the various stages involved.
+            </p>
+        </div>
+
+        <div class="li_text" style="margin-top:50px; line-height: 250%;">
+            <li>1. International shipping process</li>
+            <li>2. Customs</li>
+            <li>3. Domestic transporting</li>
+            <li>4. Packing & storage</li>
+
+            <div class="space"></div>
+            <p>- Helps customers to have the best result of prompt air-delivery and provides various route options
+                during high demanding seasons.</p>
+
+
+            <li>1. Shippers requests air freight rate and booking schedule to FEG – FEG and shipper confirm incoterms,
+                and customs/forwarding capability.</li>
+            <li>2. FEG books with airline and send over shipping request.</li>
+            <li>3. FEG transports goods from shipper’s warehouse to FEG’s warehouse.<br><br>
+
+            </li>
+            <li>4. Warehouse then checks the weight/size of the goods and issue invoice based on the chargeable weight
+                of the goods.</li>
+            <li>5. FEG brokerage team decides on the HS code based on commercial invoice and the packing list that
+                shippers provide and turn in export declaration. (The process involving documentation work must be
+                turned-in before the cut-off date that airline demands)
+            </li>
+            <li>6. Then transport goods from FEG’s warehouse to the airline’s warehouse.
+            </li>
+            <li>7. On the day of departure, airline alerts FEG with the chargeable weight/Gross weight/size and issue
+                AWB. -> FEG calculates air freight based on the chargeable weight provided by the airline.</li>
+            <li>8. Airline sends over related docs to the branch office, and so does FEG to FEG branch office.</li>
+            <li>9. Airline branch office sends arrival notice to FEG branch office and FEG branch alerts Consignee with arrival notice and invoice if any extra charges occurred.</li>
+            <li>10. Consignee pays off the charges and sends D/O if FEG branch handles delivery.</li>
+            <li>11. Shipment gets unloaded from the plane to the airline terminal.<br>
+            </li>
+            <li>12. FEG branch files customs entry. (if Certificate of Origin was issued, duty gets deducted accordingly). The process time may vary depends on the filing process of importing country.</li>
+            <li>13. After customs gets filed, FEG branch sends trucker to the airline terminal to pickup the freight. (Trucker needs to carry verification documents so the airline can match up the information of who is picking up the freight.<br>
+                - U.S. : The person picking up the freight needs to carry ATME (Authority to Make Entrance) and Arrival notice that FEG branch provides so the airline can verify that FEG
+                branch allows whomever to pickup the freight).</li>
+            <li>14. FEG branch issues POD to FEG (departing country) > ultimate completion.</li>
+            <br>
+
+            <li>*** In terms of export, FEG branch becomes FEG.</li>
+            <li>*** All the process may vary by the designated country.</li>
+        </div>
+    </div>
+
+    <div class="space"></div>
+
+    {% include 'base/footer_eng.html' %}
+</body>
+
+
+
+</html>

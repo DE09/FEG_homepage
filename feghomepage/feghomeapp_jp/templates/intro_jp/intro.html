@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include 'base_jp/head.html' %}
+
+<body>
+    <div class="doorimg">
+        <img src="/static/image/jp/subimg01.jpg" style="width : 100%; height : auto">
+    </div>
+
+
+    <div class="tabs">
+        <ul class="nav nav-tabs submenu justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{% url 'intro_jp' %}">ご挨拶</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="{% url 'history_jp' %}">沿革</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="{% url 'ogchart_jp' %}">組織</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="{% url 'sponsorship_jp' %}">後援活動</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="{% url 'access_jp' %}">地図</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 인사말칸 -->
+    <div class="img-wrap">
+        <div>
+            <p class="sub_title">ご挨拶</p>
+            <hr style="border: solid 1px black;">
+        </div>
+        <div style="text-align: center;">
+            <img src="/static/image/jp/sub01.jpg" class="be_img">
+<img src="/static/image/jp/sub01_mob.jpg" class="af_img">
+        </div>
+    </div>
+
+
+    <div class="bt_mg"></div>
+    {% include 'base_jp/footer.html' %}
+</body>
+
+</html>

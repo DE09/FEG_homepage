@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    {% include 'base/navbar_eng.html' %}
+
+<body>
+    <div class="doorimg">
+        <img src="/static/image/maintask/business area_eng.jpg" style="width : 100%; height : auto">
+    </div>
+
+
+    <div class="tabs">
+        <ul class="nav nav-tabs submenu justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{% url 'sea_eng' %}">OCEAN INBOUND AND OUTBOUND</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link  " aria-current="page" href="{% url 'air_eng' %}">AIR INBOUND AND OUTBOUND</a>
+            </li>
+        </ul>
+    </div>
+
+
+    <!-- 해상수출입     -->
+    <div class="tasktext">
+        <div style="margin-bottom: 50px;">
+            <p class="sub_title">OCEAN INBOUND AND OUTBOUND</p>
+            <hr style="border: solid 1px black;">
+
+            <div style="text-align: center;">
+                <img src="/static/image/maintask/sea_eng.jpg" class="be_img">
+                <img src="/static/image/maintask/sea_eng_small.jpg" class="af_img">
+            </div>
+        </div>
+
+        <div class="li_text" style="margin-top:50px; line-height: 250%;">
+            <h2>FEG's Task :</h2>
+            <br>
+            <p>- Undertakes the process of movements of goods through the various stages involved.</p>
+
+            <li>1. International shipping process</li>
+            <li>2. Customs</li>
+            <li>3. Domestic transporting</li>
+            <li>4. Packing & storage</li>
+
+            <div class="space"></div>
+            <p>- Alerts consignees schedules of ETD, ETA of the vessel, delay possibilities, tracing of the shipment,
+                and provides claim service once the shipment arrives damaged.</p>
+
+
+            <li>1. Shipper requests for shipping rates and booking schedule – FEG and shipper confirm incoterms, and
+                customs/forwarding capability.</li>
+            <li>2. FEG books with steamship line and sends over the shipping request</li>
+            <li>3. FEG transports the goods from the shipper’s warehouse<br>
+                - FCL : hands over the container to container yard<br>
+                - LCL : hands over the shipment to CFS
+            </li>
+            <li>4. At CFS, they then check the weight/size once the shipment arrives. *Ocean freights depends on the
+                weight and the size of the shipment*</li>
+            <li>5. FEG brokerage team decides on the HS code based on commercial invoice and the packing list that
+                shippers provide and turn in export declaration. (The process involving documentation work must be
+                turned-in before the cut-off date that steamship line demands) *US-AES filing must be done if the goods
+                value over $2,500.
+            </li>
+            <li>6. The goods get loaded on vessel passing through terminals according to the shipping schedule.
+            </li>
+            <li>7. On the day of departure, FEG issues BL and sends it over along with BOL to FEG branch where it is
+                located at the final destination of goods.<br>
+                - Original<br>
+                - Surrendered</li>
+            <li>8. Steamship line head quarter sends over same docs to its branch at the same time with FEG</li>
+            <li>9. Branch of Steamship line sends arrival notice prior to the arrival date of the shipment to FEG
+                branch.</li>
+            <li>10. FEG branch alerts CNEE and pays any fee that gets charged along with arrival notice. (differs by
+                incoterms)</li>
+            <li>11. Consignee pays the balance FEG branch requests, and at this point, all the pending payment has to be
+                cleared between Consignee and the shipper.<br>
+                - Surrendered HBL must be issued.<br>
+                - Original BL gets sent to steamship line to release OBL hold.
+            </li>
+            <li>12. FEG branch requests D/O to the consignee</li>
+            <li>13. The shipment gets unloaded from the vessel and gets transported to either CFS or to the
+                terminal.<br>
+                - CFS warehouse alerts FEG branch availability of the goods.</li>
+            <li>14. FEG branch sends over documents to the customs broker to file customs entry.</li>
+            <li>15. After the customs gets cleared, FEG branch sets up an appointment to set up delivery with the
+                trucker and with receiving party.</li>
+            <li>16. When the delivery gets done, trucker sends over POD.</li>
+            <br>
+
+            <li>*** In terms of export, FEG branch becomes FEG.</li>
+            <li>*** All the process may vary by the designated country.</li>
+        </div>
+
+        <div class="space"></div>
+    </div>
+    {% include 'base/footer_eng.html' %}
+</body>
+
+</html>

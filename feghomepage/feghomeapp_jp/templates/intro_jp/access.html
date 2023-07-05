@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include 'base_jp/head.html' %}
+
+<body>
+    <div class="doorimg">
+        <img src="/static/image/jp/subimg01.jpg" style="width : 100%; height : auto">
+    </div>
+
+    <div class="tabs">
+        <ul class="nav nav-tabs submenu justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="{% url 'intro_jp' %}">ご挨拶</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="{% url 'history_jp' %}">沿革</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="{% url 'ogchart_jp' %}">組織</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="{% url 'sponsorship_jp' %}">後援活動</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{% url 'access_jp' %}">地図</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 오시는 길 -->
+    <div class="img-wrap">
+        <div>
+            <p class="sub_title">地図</p>
+            <hr style="border: solid 1px black;">
+            <div class="space"></div>
+        </div>
+
+        <div class="container">
+            <div>
+                <h5 class="adr_title">国内</h5>
+                <p class="adr_text">Japan<br>
+                    住所: 〒105-0004 東京都港区新橋2丁目11-10 HULIC & NEW SHINBASHIビル 1003号（受付4階）</p>
+                    
+            </div>
+            <div style="text-align: center;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1573.6357179419947!2d139.70205465754768!3d35.71408130993475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d382aa90fff%3A0x47bb1c3fef2684ed!2z5qCq5byP5Lya56S-IEZFRyBMT0dJU1RJQ1M!5e0!3m2!1sko!2skr!4v1677479877341!5m2!1sko!2skr" width="1200" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="space"></div>
+            <div>
+                <h5 class="adr_title">本社</h5>
+                <p class="adr_text">ソウルシ ヨンドゥンポ・グ グッヘデロ70ギル19、809-811号<br>
+                    TEL : 82-10-32-889-4026<br>
+                    FAX : 82-10-32-889-4027
+                </p>
+            </div>
+            <div style="text-align: center;">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d790.7101771660552!2d126.86163482924404!3d37.55881656186878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9c06b7cd999b%3A0x3cc890f017fa1922!2z7ISc7Jq47Yq567OE7IucIOqwleyEnOq1rCDslpHsspzroZwgNTUxLTI0!5e0!3m2!1sko!2skr!4v1676960646684!5m2!1sko!2skr"
+                    width="1200" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" class="int_img"></iframe>
+
+            </div>
+            <div class="space"></div>
+            
+        </div>
+
+        <div class="bt_mg"></div>
+
+        <div class="container">
+            <h5 class="adr_title">Overseas branch office</h5>
+            <div class="row">
+                <div class="txt_inrow">
+                    <div class="col-3 col-sm-4">
+                        <span class="branch_t">F.E.G. [TIANJIN]</span><br>
+                        RM B-1802, JINGCAI BLDG,<br>
+                        DAGU SOUTH ROAD 459,<br>
+                        HEXI DISTRICT, TIANJIN, CHINA<br>
+                        TEL : 86-22-8386-9624/21<br>
+                        FAX : 86-22-8386-8529<br>
+                    </div>
+                    <div class="col-3 col-sm-4">
+                        <span class="branch_t">F.E.G. [SHANGHAI]</span><br>
+                        ROOM 306, JINDADI BLDG, SIPING ROAD 773,<br>
+                        HONGKOU DISTRICT, SHANGHAI, CHINA <br>
+                        TEL : 86-21-5557-1001(REP.)<br>
+                        FAX : 86-21-5512-6911<br>
+                    </div>
+                    <div class="col-3 col-sm-4">
+                        <span class="branch_t">F.E.G. [SHENZHEN]</span><br>
+                        RM 2416, CUNJIN BLDG,<br>
+                        SOUTH DONGMEN ROAD,<br>
+                        LUOHU DISTRICT, SHENZHEN,<br>
+                        GUANGDONG, CHINA<br>
+                        TEL : 86-755-8215-7011(REP.)<br>
+                        FAX : 86-755-8215-7230<br>
+                    </div>
+                </div>  
+
+                <div class="w-100 d-none d-md-block" style="margin-bottom:30px;"></div>
+
+                <div class="txt_inrow">
+                    <div class="col-3 col-sm-4">
+                        <span class="branch_t">F.E.G. [HONGKONG]</span><br>
+                        RM.F, 20/F, REASON GROUP TOWER,<br>
+                        403-413 CASTLE PEAK ROAD<br>
+                        TSUEN WAN, NEW TERRITORIES<br>
+                        HONG KONG<br>
+                        TEL : 852-3468-7160(REP.)<br>
+                        FAX : 852-3468-7166<br>
+                    </div>
+                    <div class="col-3 col-sm-4">
+                        <span class="branch_t">F.E.G. [HOCHIMINH]</span><br>
+                        6 FL, NO. 331, NGUYEN TRONG TUYEN TRONG TUTEN STR.,<br>
+                        WARD 10, PHU NHUAN DIST.,<br>
+                        HCMC, VIETNAM<br>
+                        TEL : 84-8-3991-8880(REP.)<br>
+                        FAX : 84-8-3991-8826<br>
+                    </div>
+                    <div class="col-3 col-sm-4">
+                        <span class="branch_t">F.E.G. [HANOI]</span><br>
+                        RM, 506, 5FL, 535 KIM MA STREET,<br>
+                        BA DINH DISTRICT, HANOI, VIETNAM<br>
+                        TEL : 84-04-6274-1601/1605<br>
+                        FAX : 84-04-6274-1609<br>
+                    </div>
+                </div>
+                <div class="w-100 d-none d-md-block" style="margin-bottom:30px;"></div>
+
+                <div class="txt_inrow">
+                    <div class="col-3 col-sm-4">
+                        <span class="branch_t">F.E.G. [TOKYO]</span><br>
+                        NO. 308, 17-8, IKEBUKURO 2-CHOME,<br>
+                        TOSHIMA-KU, TOKYO, 171-0014, JAPAN<br>
+                        TEL: 81-3-6868-5570<br>
+                        FAX:81-3-6685-2917<br>
+                    </div>
+                    <div class="col-3 col-sm-4">
+                        <span class="branch_t">F.E.G. [JAKARTA]</span><br>
+                        Komplek Gading Bukit Indah Blok H/26-27, Lantai 2<br>
+                        RT 03, RW 015, Kelurahan Kelapa Gading Barat<br>
+                        Kec. Kelapa Gading, Kota Adm. Jakarta Utara<br>
+                        Provinsi DKI Jakarta 14240<br>
+                        TEL : +82-10-4513-5781M<br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bt_mg"></div>
+    {% include 'base_jp/footer.html' %}
+</body>
+
+</html>

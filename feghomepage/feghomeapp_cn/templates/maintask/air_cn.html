@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    {% include 'base/navbar_cn.html' %}
+
+<body>
+    <div class="doorimg">
+        <img src="/static/image/cn/subimg02.jpg" style="width : 100%; height : auto">
+    </div>
+
+    <div class="tabs">
+        <ul class="nav nav-tabs submenu justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="{% url 'sea_cn' %}">海运进出口</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link  active" aria-current="page" href="{% url 'air_cn' %}">航运进出口</a>
+            </li>
+
+        </ul>
+    </div>
+
+
+    <!-- 항공수출입 -->
+    <div class="tasktext">
+        <div style="margin-bottom: 50px;">
+            <p class="sub_title">航运进出口</p>
+            <hr style="border: solid 1px black;">
+            <h2>航运进出口</h2>
+            <p>
+                FEG作为International Freight Forwarder,负责国际运输、通关、内陆运输、包装、保管等客户的进出口物流业务。 我们在空运运输方面,不仅提供基本的日程安排，为了最大限度地提高航空运输的及时性，促进更好的及时交付，我们专注于通过提供连续追踪和旺季航线的选择来满足客户的需求。
+            </p>
+        </div>
+
+        <div class="img-wrap" style="text-align: center;">
+            <img src="/static/image/cn/air_cn.jpg" class="be_img">
+        </div>
+
+    
+        <div class="li_text" style="margin-top:50px;">
+            <li>1. 出口者请求报价并咨询日程后，委托FEG交付装运。FEG则确认进出口者之间的运输合同内容(INCOTERMS)，以及通关，运输的明确委托。</li>
+            <li>2. FEG委托相关空运公司进行时间表预约(Booking and Shipping Request)。</li>
+            <li>3. FEG运输部门将发货人需出口货物从出口地装入， 发往FEG航公仓库。</li>
+            <li>4. 在仓库测定货物的尺寸和重量-费用是以体积和重量中的较大值(Chargeable Weight)为标准来进行计算的。</li>
+            <li>5. FEG通关部门由出口者的装船文件（
+                <a href="#" data-bs-toggle="tooltip"
+                    data-bs-title="C/I(Commercial Invoice):商业发票  出货之前要做的商业发票">
+                    C/I,</a>
+                <a href="#" data-bs-toggle="tooltip"
+                    data-bs-title="P/L(Packing List):出货之前要做的装箱单">
+                    P/L</a>
+                    ）决定海关号码（
+                <a href="#" data-bs-toggle="tooltip"
+                    data-bs-title="HSCODE:即海关编码，为编码协调制度的简称，是对各种不同产品出入境应征/应退关税税率进行量化管理的制度">
+                    HSCODE</a>
+                    ）后，在海关出口报关-&gt;海关批准后发放出口许可证。 以上报关程序，海运公司均需在截单之前全部完成。
+            </li>
+            <li>6. 将从FEG仓库的货物，在进入空运公司的仓库后等待装运。</li>
+            <li>7. 空运公司给FEG开具
+                <a href="#" data-bs-toggle="tooltip" data-bs-title="AWB : 航空货运单 由托运人或以托运人名义签发的单据，是托运人和承运人之间货物运输的证明">
+                    AWB</a>
+                    ，FEG给出口者开具写实际上重量及体制的 AWB 。这里， AWB上来根据
+                <a href="#" data-bs-toggle="tooltip"
+                    data-bs-title="Chargeable Weight : 计费重量, 用来计算航空运费的重量。计费重量可以是体积重量，如果是重货，按重量收费，如果是轻货，则按体积计算重量">
+                    Chargeable weight </a>
+                    支付运费
+            </li>
+            <li>8. 启航日当天，空运公司给海外代理店发布出港通知和相关文件，FEG也同时向海外代理店发出启航通知和相关文件。</li>
+            <li>9. 空运公司海外代理店给FEG海外代理店发送到达通知，FEG海外代理店给收货人发送到达通知。与此同时，空运公司或代理公司还将一并寄送给收货者需承担费用的账单。</li>
+            <li>10. 收货人和货代公司支付相应的账单， 收货人的话货代公司， 货代公司的话给空运公 申请提货单。
+            </li>
+            <li>11. 货物从飞机上卸货后，送到空运公司制定的仓库交货。（此时，仓库确认货物是否存在异常，并通知给收货方，也即代理公司。）</li>
+            <li>12. 空运公司和货代公司确认货物的收纳后，DO处理。(收货人是韩国人的话 ， 处理过程是电脑化)</li>
+            <li>13. 海外代理店的报关行或者进口商的报关行利用 装船文件 (B/L、CI、PL)进行进口通关。根据与出口国的关系，关税减免优惠政策以及进口国的海关法律，决定海关号码，申报清关。海关批准（所需时间根据进口国家的通关环境会有所不同。）</li>
+            <li>14. 海关批准后，FEG海外代理店的拖车公司或者收货人的指定承运人在保税仓库装货，配送至收货地址。收货人在收货地点领取货物并签名。
+                </li>
+            <li>15. FEG海外代理店在配送完成后发出通知（
+                <a href="#" data-bs-toggle="tooltip"
+                    data-bs-title="POD(Proof of Delivery):交付凭证.&nbsp;这是一种证书，证明货物没有任何异常地交给收货人。通常，它由SIGN发送到B&nbsp;/&nbsp;L或AWB并送到出口目的地。">
+                    POD</a>
+                    提供） -&gt;  配送最终完成
+            </li>
+            <li>*** 以上是通过FEG的出口程序。此外，上面的“FEG”表示“FEG的海外代理店”。</li>
+            <li>*** 以上程序是包括韩国在内的大部分高物流国家里城市的一般进出口步骤，部分国家的程序和环境可能会有所不同。</li>
+        </div>
+    </div>
+
+    <div class="space"></div>
+
+    {% include 'base/footer_cn.html' %}
+</body>
+
+
+
+</html>
